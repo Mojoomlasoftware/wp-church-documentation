@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+<!-- Basic Page Needs
+         ================================================== -->
+<meta charset="utf-8">
+<title>Church management system - Documentation</title>
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- Mobile Specific Metas	
+         ================================================== -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!-- CSS
+         ================================================== -->
+<link rel="stylesheet" href="css/style.css" type="text/css"  media="all">
+<link rel="stylesheet" href="css/print.css" type="text/css"  media="print">
+<link href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700|Roboto+Slab:300,400" rel="stylesheet" type="text/css">
+<!-- JS
+         ================================================== -->
+<script type="text/javascript" src="js/jquery.min.js" ></script>
+<!--[if lt IE 9]>
+      <script src="js/modernizr.custom.11889.js" type="text/javascript"></script>
+      <![endif]-->
+<!-- HTML5 Shiv events (end)-->
+<!-- Favicons
+         ================================================== -->
+<link rel="shortcut icon" href="images/favicon.ico">
+</head>
+<body>
+<!-- Primary Page Layout
+         ================================================== -->
+<div id="wrap" class="colorskin-0">
+  <!-- end-header -->
+  <section class="container">
+    <div class="row">
+      <div id="header-sm">
+        <div class="col-md-3 logo"> <a href="index.html"><img src="images/logo-warranty.png" width="150" id="img-logo" alt="logo"></a> </div>
+        <div class="col-md-8 col-md-offset-1 desc">
+          <h4 class="slight">Church Management System</h4>
+          <h5 class="slight"><small> Documented by Mojoomla - at June 09 2023</small></h5>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <aside id="side-nav">
+          <div class="logo"> <img src="images/mojoomla_logo.png" id="img-logo" alt="mojoomla" style="margin-bottom:20px;"> </div>
+          <ul id="top-menu">
+            <li><a class="current" href="#Introduction">Introduction</a></li>
+            <li><a href="#Installation">Installation</a></li>
+			<li><a href="#admin_view">Admin view</a></li>
+			<li><a href="#member_view">Member</a></li>
+			<li><a href="#accountant_view">Accountant</a></li>
+			<li><a href="#family_member_view">Family Member</a></li>
+			<li><a href="#fronted-login">Fronted Login Page</a></li>
+            <li><a href="#FAQ">FAQ</a></li>
+			 <li><a href="#setting-up-Language">setting up Language</a></li>
+                    </ul>
+        </aside>
+      </div>
+      <div class="col-md-8">
+        <section  id="Introduction">
+          <div id="header" class="row">
+            <div class="col-md-3 logo"> <a href="index.html"><img src="images/logo.png"  id="img-logo" alt="logo"></a> </div>
+            <div class="col-md-8 col-md-offset-1 desc">
+              <h4 class="slight_color slight">Church Management System</h4>
+              <h5 class="slight"><small class="slight_color"> Documented by Mojoomla</a> - at June 09 2023</small></h5>
+            </div>
+          </div>
+          <hr class="vertical-space2">
+          <p align="center"><img src="images/preview-image.jpg"></p>
+          <h3><strong>A) Introduction</strong></h3>
+          <p>
+			Church Management System for WordPress plugin is the ideal way to manage complete Church operation. It has different user roles as Member, Volunteer, Accountant and Admin users. 
+			</p>
+          <p>This user guide covers all options that this plugin provides. Please read the documentation carefully as it probably contains answers to most of the questions that may arise. If you feel some aspect is not covered or have some questions, contact us via e-mail sales@mojoomla.com. We will do our best to answer you in the shortest time.</p>
+          <!-- <hr class="vertical-space2"> -->
+          <section id="Package">
+            <!-- <hr class="vertical-space2"> -->
+			<hr>
+          
+          <section id="Installation">
+            <h3><strong>B)  Installation:</strong></h3>
+			<h4><strong>1). FTP Upload</strong></h4>
+			<ol>
+              <li>Unzip the "
+                <mark>church_management_system.zip</mark>
+                " file</li>
+              <li>Upload the extracted
+                <mark>"Church Management"</mark>
+                plugin folder into "/wp-content / plugins/" in your WordPress  installation</li>
+              <li>To Activate the plugin, Go to Plugins and activate the installed plugin</li>
+            </ol>
+            </ol>
+			<h4><strong>2). WordPress Upload</strong></h4>
+            <p>Steps for Church Management System plugin Installation:</p>
+           <ol>
+              <li>Go to Wordpress Admin<strong> Plugins</strong> &rarr; click on <strong>Add New</strong> &rarr; click on <strong>Upload</strong>.</li>
+               <li>Unzip the "<mark>church_management_system.zip</mark>
+                " file and Upload the <mark>" church_management_system.zip"</mark> . &rarr; click on <strong>Install Now</strong>. </li>
+              <li>Click on <strong>Activate Plugin</strong>.</li>
+          	<li>You can see <strong>Church Management</strong> on the dashboard.</li>
+            </ol>
+           <p></p>
+            <h5><strong>Increasing the WordPress Memory Limit</strong></h5>
+            <ul>
+              <li> Edit your wp-config.php file and enter something like:
+                <pre>define('WP_MEMORY_LIMIT', '256M');</pre>
+                WordPress memory can be different to the server – you need to set this regardless of server memory settings </li>
+              <li> If you have access to your PHP.ini file, change the line in PHP.ini If your line shows 32M try 256M:
+              	<pre>max_execution_time= 600 ; Maximum execution time of each script </pre>
+                <pre>memory_limit = 256M; Maximum amount of memory a script may consume (64MB)</pre>
+				<pre>post_max_size = 256Mb;</pre>
+				<pre>upload_max_filesize = 256Mb; </pre>
+				
+              </li>
+              <li>If you don't have access to PHP.ini try adding this to an .htaccess file:<br>
+                php_value memory_limit 64M</li>
+              <li>If none of the above works then talk to your host.</li>
+            </ul>
+            <hr>
+            </section>
+            
+			<section id="admin_view">
+				<section id="admin-dasboard">
+				 <h3><strong>C)  Admin View</strong></h3>
+				 <p><strong>Dashboard:</strong> Admin side dashboard view.</p>
+				<img alt="Install plugin" src="images/admin/admin_dashboard.png">
+				<!-- <p>Admin Can send a birthday wish to the member by message and mail.</p> -->
+            <hr>
+			</section>
+			
+			<section id="General-Settings">
+            <h4><strong>1) License  Settings</strong></h4>
+            <p>Click on <strong>License Settings</strong> under church management link-list to start setting up the system. Please fill all required fields. You can access plugin only after successfully registration of your Envato License key. You can use a single license key for the only single domain. Same license key can't use for different domains. </p>
+            <img alt="" src="images/admin/licence-settings.png">
+            <br>
+            <br>
+             <ul>
+              
+            <ol>
+				<li><strong>Domain:</strong> This is your domain name. You do not need to enter it. The system automatically takes it</li>
+                <li><strong>Envato License key: </strong>Enter Envato license key of the church. </li>
+                <li><strong>Email: </strong>Enter your email.</li>
+			</ol>
+            </ul>
+             <hr>
+            </section>
+			
+			
+          <section id="General-Settings">
+            <h4><strong>2) General Settings</strong></h4>
+            <p>Click on <strong>General Setting</strong> under church management link-list to start setting up the system . You are advised to fill all fields of General settings as these details are used the different section of the whole system .You can change these settings as per your requirement.</p>
+            <img alt="" src="images/admin/general-settings.png">
+            <br>
+            <br>
+             <ul>
+              
+            <ol>
+
+            	<li><strong>Church Name:</strong> Enter a name of the church.</li>
+                <li><strong>Starting Year: </strong>Enter starting year of the church. </li>
+                <li><strong>Church Address: </strong>Enter address of the church.</li>
+                <li><strong>Official Phone No: </strong>Enter the official  phone number of the church.</li>
+                <li><strong>Country: </strong>Enter country of church Located in.</li>
+                <li><strong>E-mail: </strong>Enter the official e-mail address of the church.</li>
+                <li><strong>Church Logo: </strong>Enter church logo.</li>
+                <li><strong>Profile Cover Image: </strong>Upload church photo and this will be used for profile background.</li>
+				 <li><strong>Enable Sandbox: </strong>This is enabled for keep PayPal sandbox account enable for testing purpose.</li>
+				 <li><strong>PayPal Email Id: </strong>Enter here your PayPal account email.</li>
+				 <li><strong>Select Currency: </strong>Select currency for your PayPal transaction.</li>
+				 <li><strong>Enable Notifications: </strong>Enable it if you want to send notification mail to members.</li>
+				 <li><strong>Paymaster Payment Gateways: </strong>Enable it if you want to use paymaster payment gateways.</li>
+            </ol>
+            	  
+            </ul>
+             <hr>
+            </section>
+            
+			<section id="member">
+            <h4><strong>3) Member</strong></h4>
+            <p>You can manage all information about Member.</p>
+            
+            <img alt="patient " src="images/admin/member/view member.png">
+            <br>
+            <br> 
+			<p>Take Action In List.</p>
+			<img alt="patient " src="images/admin/member/three_dot.png">
+            <br>
+			<br>
+			<ol>
+				<h5><strong><li>Add Member Information</li></strong></h5> 
+				<p>Here you can add a new member by filling this above form.</p>
+            
+            	<img alt="add-member " src="images/admin/member/add_member.png"><br><br>
+					<ul>
+						<!-- <li>Here you can add a new member by filling this above form.</li> -->
+						<!--<li><strong>Member Id</strong>: Here member id will be automatically generate for each new member. So that you not need to enter this field.</li>
+						<li><strong>Name</strong>: Enter new member name.</li>
+						<li><strong>Gender</strong>: Select Gender For member.</li>
+						<li><strong>Date Of Birth</strong>: Enter date of birth for member.</li>
+						<li><strong>Class</strong>: Select class for member.</li>
+						<li><strong>Group</strong>: Select group for member. you can also select multiple groups for one member.</li>
+						<li><strong>Home Town Address</strong>: Enter home town address of member.</li>
+						<li><strong>City</strong>: Enter city name of member.</li>				
+						<li><strong>Mobile Number</strong>: Enter mobile number of member.</li>
+						<li><strong>Email</strong>: Enter email id of member. Email ID must be unique.</li>
+						<li><strong>Weight</strong>: Enter the Weight of member.</li>
+						<li><strong>Height</strong>: Enter the Height of member.</li>
+						<li><strong>Chest</strong>: Enter the Chest of member.</li>
+						<li><strong>Waist</strong>: Enter the Waist of member.</li>
+						<li><strong>Thigh</strong>: Enter the Thigh of member.</li>
+						<li><strong>Arms</strong>: Enter the Arms of member.</li>
+						<li><strong>Username</strong>: Enter username to enable member login. Username must be unique. </li>
+						<li><strong>Password</strong>: Enter password of member for login.</li>
+						<li><strong>Image</strong>: Upload profile image of member.</li>
+						<li><strong>Select Staff Member</strong>: Selecr staff member for instruct to this member.</li>
+						<li><strong>Intrested Area</strong>: Selec intrested area of member.</li>
+						<li><strong>Source</strong>: Select source which through you join gym.</li>
+						<li><strong>Reffered By</strong>: Select Staff member reference member for this gym.</li>
+						<li><strong>Inquiry Date</strong>: Enter the inquiry date of member.</li>
+						<li><strong>Trial End Date</strong>: Enter the trial end date of member.</li>
+						<li><strong>Membership</strong>: Select membership which is selected by member.</li>
+						<li><strong>Auto Renew</strong>: Select the oetion of auto renue for renue selected membership.</li>
+						<li><strong>Begin Date</strong>: Enter the begin date of member.</li>
+						<li><strong>First Payment Date</strong>: Enter the first payment date of member.</li>-->
+						
+					</ul>
+            <br> 
+			<h5><strong><li>Upload Member</li></strong></h5> 
+              <p>Admin can upload member through the CSV  file.</p>
+			<img alt="view detail" src="images/admin/member/member_csv_upload.png">
+             <br>
+            <br> 
+			<h5><strong><li>View Member Detail</li></strong></h5> 
+              <p>Admin can view detail of particular member by clicking on view detail button.</p>
+			<img alt="view detail" src="images/admin/member/view_member.png">
+             <br>
+            <br> 
+            <h5><strong><li>View Member Gift</li></strong></h5> 
+              <p>Display achieved gifts of particular a member.</p>
+            <img alt="view parent" src="images/admin/member/members_view_gift.png">
+			<br>
+			<br> 
+            <h5><strong><li>Member's Invoice List</li></strong></h5> 
+			<p></p>
+            <img alt="view parent" src="images/admin/member/view_invoice member1.png">
+			<br>
+			<br> 
+            <h5><strong><li>Member's Pastoral List</li></strong></h5> 
+			<p></p>
+            <img alt="view parent" src="images/admin/member/view_pastoral1.png">
+			<br>
+			<br> 
+            <h5><strong><li>Member's Pledges List</li></strong></h5> 
+			<p></p>
+            <img alt="view parent" src="images/admin/member/view_pledges1.png">
+			<br>
+			<br> 
+            <h5><strong><li>Member's Family Member List</li></strong></h5> 
+			<p></p>
+            <img alt="view parent" src="images/admin/member/view_family_member.png">
+
+			<br>
+			<br> 
+            <h5><strong><li>Member's Attendance List</li></strong></h5> 
+			<p></p>
+            <img alt="view parent" src="images/admin/member/view_attendance.png">
+
+			<br>
+			<br> 
+            <h5><strong><li>Add Button</li></strong></h5> 
+			<p></p>
+            <img alt="view parent" src="images/admin/member/view_add_btn.png">
+			
+           </ol>
+			<hr>
+            </section>
+			
+			<section id="document">
+            <h4><strong>4) Document</strong></h4>	
+            <p>You can add a new document and view list of all document.</p>
+           
+            <img alt="group" src="images/admin/document/view document.png"><br><br>
+			
+			<ol>
+				<h5><strong><li>Add Document</li></strong></h5> 
+				<p> </p>
+				<img alt="document" src="images/admin/document/add document.png"><br><br>
+				<ul>
+					<li><strong>Document Name</strong>: Enter new document name.</li>
+					<li><strong>Document</strong>: Select document file.</li>
+						<li><strong>Description</strong>: Enter document description.</li>
+				</ul>
+				<br>
+				<h5><strong><li>View Document Detail</li></strong></h5> 
+				<p> </p>
+				<img alt="document" src="images/admin/document/view_document_popup.png"><br><br>
+
+			</ol>
+			<hr>
+            </section>
+			
+			
+			<section id="family_member">
+            <h4><strong>5)Family Member</strong></h4>	
+            <p>You can add a new family member and manage all family member as well as view a complete list of all family member.</p>
+           
+            <img alt="group" src="images/admin/family/view_family_member.png"><br><br>
+			
+			<ol>
+				<h5><strong><li>Add Family Member</li></strong></h5> 
+				<p>Here you can add a new family member by filling this above form.</p>
+				<img alt="teacher" src="images/admin/family/add_family.png"><br><br>
+				<ul>
+					<!-- <li>Here you can add a new family member by filling this above form.</li> -->
+				</ul>
+				<br>
+
+				<h5><strong><li>View Family Member</li></strong></h5> 
+				<p> </p>
+				<img alt="teacher" src="images/admin/family/view_family.png"><br><br>
+				<!-- <ul>
+					<li>Here you can add a new family member by filling this above form.</li>
+				</ul> -->
+				</ol>
+			<hr>
+            </section>
+
+			<section id="family_member">
+				<h4><strong>6)Accountant</strong></h4>	
+				<p>Here you can add new accountant and manage all accountant same like members as well as view a complete list of all accountants.</p>
+			   
+				<img alt="group" src="images/admin/accountant/accountant_list.png"><br><br>
+				
+				<ol>
+					<h5><strong><li>Add Accountant</li></strong></h5> 
+					<p>Here you can add a new Accountant by filling this above form.</p>
+					<img alt="teacher" src="images/admin/accountant/add_accountant.png"><br><br>
+					<ul>
+						<!-- <li></li> -->
+					</ul>
+	
+					<h5><strong><li>View Accountant</li></strong></h5> 
+					<p> </p>
+					<img alt="teacher" src="images/admin/accountant/view_accountant.png">
+					
+					</ol>
+				<hr>
+				</section>
+
+			<section id="ministry">
+				<h4><strong>7) Group</strong></h4>	
+			   <p>You can add new Group and manage all Group as well as view a complete list of all Group.</p>
+			   <img alt="service" src="images/admin/group/group_list.png"><br><br>
+			   <ol>
+				   <h5><strong><li>Add Group</li></strong></h5> 
+				   <p>You can also add new Group by filling this form. </p>
+				   <img alt="Ministry" src="images/admin/group/add_group.png"><br><br>
+				   <ul>
+				   </ul>
+
+				   <h5><strong><li>Add Member</li></strong></h5> 
+				   <p> </p>
+				   <img alt="Ministry" src="images/admin/group/add_member.png">
+			   </ol>
+			   <hr>
+			</section>
+
+			<section id="ministry">
+			 <h4><strong>8) Ministry</strong></h4>	
+            <p>You can add new Ministry and manage all Ministries as well as view a complete list of all Ministries.</p>
+           
+            <img alt="service" src="images/admin/ministry/ministry_list.png"><br><br>
+			
+			<ol>
+				<h5><strong><li>Add Ministry</li></strong></h5> 
+				<p>You can also add new Ministry by filling this form. </p>
+				<img alt="Ministry" src="images/admin/ministry/add_ministry.png"><br><br>
+				<ul>
+						
+						<!--<li><strong>Service Name</strong>: Enter new Service name.</li>
+						<li><strong>Service Image</strong>: Upload image for this service.</li>-->
+				</ul>
+
+				<h5><strong><li>Add Member</li></strong></h5> 
+				<p></p>
+				<img alt="Ministry" src="images/admin/ministry/add_member.png"><br><br>
+				<ul>
+						
+						<!--<li><strong>Service Name</strong>: Enter new Service name.</li>
+						<li><strong>Service Image</strong>: Upload image for this service.</li>-->
+				</ul>
+
+			</ol>
+			<hr>
+            </section>
+
+			<section id="services">
+				<h4><strong>9) Services</strong></h4>	
+				<p>You can add new Service and manage all Services as well as view a complete list of all Services.</p>
+			   
+				<img alt="service" src="images/admin/service/services_list.png"><br><br>
+				
+				<ol>
+					<h5><strong><li>Add Service</li></strong></h5> 
+					<p> You can also add new service by filling this form.</p>
+					<img alt="service" src="images/admin/service/add_services.png"><br><br>
+					<ul>
+							
+							<!--<li><strong>Service Name</strong>: Enter new Service name.</li>
+							<li><strong>Service Image</strong>: Upload image for this service.</li>-->
+					</ul>
+					<h5><strong><li>View Service Detail</li></strong></h5> 
+					<p></p>
+					<img alt="service" src="images/admin/service/view_service.png"><br><br>
+					<ul>
+							
+							<!--<li><strong>Service Name</strong>: Enter new Service name.</li>
+							<li><strong>Service Image</strong>: Upload image for this service.</li>-->
+					</ul>
+					</ol>
+				<hr>
+			</section>
+
+			<section id="services">
+				<h4><strong>10) Pastoral</strong></h4>	
+				<p>You can add new Pastoral and manage all Pastoral as well as view a complete list of all Pastoral.</p>
+			   
+				<img alt="service" src="images/admin/pastoral/pastoral_list.png"><br><br>
+				
+				<ol>
+					<h5><strong><li>Add Pastoral</li></strong></h5> 
+					<p> You can also add new Pastoral by filling this form.</p>
+					<img alt="service" src="images/admin/pastoral/add_pastoral.png"><br><br>
+					<ul>
+							
+							<!--<li><strong>Service Name</strong>: Enter new Service name.</li>
+							<li><strong>Service Image</strong>: Upload image for this service.</li>-->
+					</ul>
+					<h5><strong><li>View Pastoral Detail</li></strong></h5> 
+					<p></p>
+					<img alt="service" src="images/admin/pastoral/view_pastoral.png"><br><br>
+					<ul>
+							
+							<!--<li><strong>Service Name</strong>: Enter new Service name.</li>
+							<li><strong>Service Image</strong>: Upload image for this service.</li>-->
+					</ul>
+					</ol>
+				<hr>
+			</section>
+
+			<section id="activity">
+				<h4><strong>11) Attendance</strong></h4>	
+			   <p>You can also take attendance of members activities wise.</p>
+		  
+			   <img alt="service" src="images/admin/attendance/attendance.png"><br><br>
+		   
+			   <ol>
+				   <h5><strong><li>Ministry Attendance</li></strong></h5> 
+				   <p>Here you can also manage ministry attendance. </p>
+				   <img alt="Ministry_attendance" src="images/admin/attendance/ministry_attendance.png"><br><br>
+			   </ol>
+			   <hr>
+		   </section>
+
+			<section id="activity">
+			 	<h4><strong>12) Activity</strong></h4>	
+            	<p>You can add a new activity and manage all activities as well as view a complete list of all activities.</p>
+           
+            	<img alt="service" src="images/admin/activity/activity_list.png"><br><br>
+			
+				<ol>
+					<h5><strong><li>Add Activity</li></strong></h5> 
+					<p>You can also add new Activity by filling this form. </p>
+					<img alt="Ministry" src="images/admin/activity/add_activity.png"><br><br>
+					<ul>
+							
+							<!--<li><strong>Service Name</strong>: Enter new Service name.</li>
+							<li><strong>Service Image</strong>: Upload image for this service.</li>-->
+					</ul>
+					<h5><strong><li>View Activity Detail</li></strong></h5> 
+					<p></p>
+					<img alt="Ministry" src="images/admin/activity/activity_detail.png"><br><br>
+					<ul>
+							
+							<!--<li><strong>Service Name</strong>: Enter new Service name.</li>
+							<li><strong>Service Image</strong>: Upload image for this service.</li>-->
+					</ul>
+				</ol>
+				<hr>
+            </section>
+			
+			<section id="venue">
+			 <h4><strong>13) Venue</strong></h4>	
+            <p>You can add new venue and manage all venue as well as view a complete list of all venue.</p>
+				<img alt="service" src="images/admin/venue/vanue_list.png"><br><br>
+
+				<ol>
+					<h5><strong><li>Add Venue</li></strong></h5> 
+					<p>You can also add new Venue by filling this form. </p>
+					<img alt="Ministry" src="images/admin/venue/add_vanue.png"><br><br>
+					<ul>
+							
+							<!--<li><strong>Service Name</strong>: Enter new Service name.</li>
+							<li><strong>Service Image</strong>: Upload image for this service.</li>-->
+					</ul>
+					<h5><strong><li>View Venue Detail</li></strong></h5> 
+					<p></p>
+					<img alt="Ministry" src="images/admin/venue/vanue_detail.png"><br><br>
+					<ul>
+							
+							<!--<li><strong>Service Name</strong>: Enter new Service name.</li>
+							<li><strong>Service Image</strong>: Upload image for this service.</li>-->
+					</ul>
+				</ol>
+			<hr>
+            </section>
+
+			<section id="venue">
+				<h4><strong>14) Reservation</strong></h4>	
+			   <p>You can add new Reservation and manage all Reservation as well as view a complete list of all Reservation.</p>
+				   <img alt="service" src="images/admin/reservation/reservation_list.png"><br><br>
+   
+				   <ol>
+					   <h5><strong><li>Add Reservation</li></strong></h5> 
+					   <p>You can also add new Reservation by filling this form. </p>
+					   <img alt="Ministry" src="images/admin/reservation/add_reservation.png"><br><br>
+					   <ul>
+							   
+							   <!--<li><strong>Service Name</strong>: Enter new Service name.</li>
+							   <li><strong>Service Image</strong>: Upload image for this service.</li>-->
+					   </ul>
+					   <h5><strong><li>View Reservation Detail</li></strong></h5> 
+					   <p></p>
+					   <img alt="Ministry" src="images/admin/reservation/reservation_detail.png"><br><br>
+					   <ul>
+							   
+							   <!--<li><strong>Service Name</strong>: Enter new Service name.</li>
+							   <li><strong>Service Image</strong>: Upload image for this service.</li>-->
+					   </ul>
+				   </ol>
+			   <hr>
+			   </section>
+
+			<section id="check-in">
+			 <h4><strong>15) Check-In</strong></h4>	
+            <p>Here you can add new room and manage all rooms check-in,check-out process as well as view a complete list of all rooms check-in history.</p>
+			<img alt="room" src="images/admin/check_in/check_in_room_list.png"><br><br>
+			
+			<ol>
+				<h5><strong><li>Add check-In</li></strong></h5> 
+				<p>You can also check-in in the room.</p>
+				<img alt="check-in" src="images/admin/check_in/check_in_form.png"><br><br>
+				<h5><strong><li>Add Room</li></strong></h5> 
+				<p>You can also add a new room.</p>
+				<img alt="check-in" src="images/admin/check_in/add_room.png"><br><br>
+				</ol>
+			<hr>
+            </section>
+
+			<section id="serman">
+			 	<h4><strong>16) Sermon List</strong></h4>	
+				<p>Here you can add new Sermon and manage all Sermons as well as view a complete list of all Sermons.</p>
+				<img alt="room" src="images/admin/sermon/sermon_list.png"><br><br>
+				<ol>
+					<h5><strong><li>Add Sermon</li></strong></h5> 
+					<p>You can also add new Sermon.</p>
+					<img alt="check-in" src="images/admin/sermon/sermon_add.png"><br><br>
+
+					<h5><strong><li>View Sermon Detail</li></strong></h5> 
+					<p></p>
+					<img alt="Ministry" src="images/admin/sermon/sermon_detail.png"><br><br>
+					
+				</ol>
+				<hr>
+            </section>
+
+			<section id="gifts">
+				<h4><strong>17) Spiritual Gifts</strong></h4>	
+			   <p>Here you can add new gift and manage all gift as well as view a complete list of all gift. View invoice and also can be print-out it.</p>
+			   <img alt="gift-list" src="images/admin/gifts/spirituale_gift.png"><br><br>
+			   <ol>
+				   <h5><strong><li>Add Spiritual Gift</li></strong></h5> 
+				   <p>You can also add a new spiritual gift.</p>
+				   <img alt="gift" src="images/admin/gifts/add_spiritual_gift.png"><br><br>
+
+					<h5><strong><li>Add Spiritual Gift</li></strong></h5> 
+					<p></p>
+					<img alt="gift" src="images/admin/gifts/view_spiritual_gift.png"><br><br>
+
+				   <h5><strong><li>Sell Gift List</li></strong></h5> 
+				   <p>here sell gift spiritual gift.</p>
+				   <img alt="gift" src="images/admin/gifts/sell_gift.png"><br><br>
+
+				   <h5><strong><li>Add Sell Gift</li></strong></h5> 
+					<p></p>
+					<img alt="gift" src="images/admin/gifts/add_sell.png"><br><br>
+			   </ol>
+			   <hr>
+		   	</section>
+
+		   	<section id="pledges">
+				<h4><strong>18) Pledges List</strong></h4>	
+				<p>Here you can add new pledges and manage all pledges as well as view a complete list of all pledges. View invoice and also can be print-out it.</p>
+				<img alt="room" src="images/admin/pledges/pledges_list.png"><br><br>
+				<ol>
+					<h5><strong><li>Add Pledges</li></strong></h5> 
+					<p>You can also add new Pledges.</p>
+					<img alt="check-in" src="images/admin/pledges/pledges_add.png"><br><br>
+
+					<h5><strong><li>View Invoice</li></strong></h5> 
+					<p></p>
+					<img alt="check-in" src="images/admin/pledges/View_Invoice.png"><br><br>
+				</ol>
+				<hr>
+			</section>
+
+			<section id="song">
+			 <h4><strong>19) Song List</strong></h4>	
+            <p>Here you can add new Song and manage all Song as well as view s complete list of all Songs.</p>
+			<img alt="room" src="images/admin/song/song_list.png"><br><br>
+				<ol>
+					<h5><strong><li>Add Song</li></strong></h5> 
+					<p>You can also add new Song.</p>
+					<img alt="check-in" src="images/admin/song/add_song.png"><br><br>
+
+					<h5><strong><li>View Song</li></strong></h5> 
+					<p>You can also View Song.</p>
+					<img alt="check-in" src="images/admin/song/view_song.png"><br><br>
+				</ol>
+			<hr>
+            </section>
+
+			<section id="payment">
+            	<h4><strong>20)  Payment</strong></h4>
+            	<p>You can add a Transaction and view a complete list of all Transactions.</p>
+				<img alt="transaction list" src="images/admin/payment/transaction_list.png"><br><br>
+				<ol>	
+					<h5><strong><li>Add Transaction</li></strong></h5>
+					<p>Must fill all required fields in adding Transaction form for add new Transaction.</p>
+					<img alt="Diagnosis Report" src="images/admin/payment/add_transaction.png"><br><br>
+						
+				</ol>
+			
+				<h5><strong><li>Income List</li></strong></h5>
+			 	<p>You can add an Income and view a complete list of all Income.</p>
+				<img alt="Diagnosis Report" src="images/admin/payment/income_list.png"><br><br>
+            	<ol>
+					<h5><strong><li>Add Income</li></strong></h5>
+					<p>Must fill all required fields in adding Income form for add new Income. </p>
+            		<img alt="Diagnosis Report" src="images/admin/payment/add_income.png"><br><br>
+					<ul>
+						<li><strong>Member</strong>: The select member for income.</li>
+						<li><strong>Income label</strong>: Enter income label for income.</li>
+						<li><strong>Status</strong>: select status of invoice payment method.</li>	
+						<li><strong>Date</strong>: Enter date of invoice.</li>	
+						<li><strong>Income Entry</strong>: Enter income entry and also enter the total amount of that entry.
+						<li><strong>Add Income Entry</strong>: If you want to add other entry then click on <strong>Add Income Entry</strong> button.</li>
+						</li>	
+					</ul>
+					<br>
+				</ol>
+				<h5><strong><li>Expense List</li></strong></h5>
+			 	<p>You can add an Expense and view a complete list of all Expense.</p>
+				<img alt="Expense" src="images/admin/payment/Expense_list.png"><br><br>
+           	 	<ol>
+					<h5><strong><li>Add Expense:</li></strong></h5>
+					<p>Must fill all required fields in adding Expense form for add new Expense.</p>
+            		<img alt="Expense" src="images/admin/payment/add_expense.png"><br><br>
+					<ul>
+						<li><strong>Supplier Name</strong>: Select Supplier Name for expense.</li>
+						<li><strong>Status</strong>: select status of expense payment method.</li>	
+						<li><strong>Date</strong>: Enter date of expense.</li>	
+						<li><strong>Expense Entry</strong>: Enter Expense entry and also enter the total amount of that entry.
+						<li><strong>Add Expense Entry</strong>: If you want to add other entry then click on <strong>Add Expense Entry</strong> button.</li>
+						</li>	
+					</ul>
+				</ol>
+					<h5><strong><li>View Invoice</li></strong></h5>
+					<p>You can also print invoice, income, and expense. For that just click on view invoice link of list invoice and a pop-up will open then click on <strong>Print/Pdf</strong> button from the pop-up.</p>
+					<img alt="print)invoice" src="images/admin/payment/view_invoice.png"><br><br>
+				
+					<hr>
+			</section>
+
+			<section id="payment">
+				<h4><strong>21) Report</strong></h4>
+				<ol>
+					<h5><strong><li> Attendance Report</li></strong></h5>
+			
+					<p>You can view attendance Report by selecting time period.</p>
+					<p>Must be filled both required fields of view this report. </p>
+						<ul>
+							<li><strong>Start Date</strong>: select start date.</li>
+							<li><strong>End Date</strong>: Select End date.</li>
+						</ul>
+					<img alt="attendance-report" src="images/admin/report/attendance_report.png"><br><br>
+				
+					<h5><strong><li> Payment Report</li></strong></h5>
+					<p>You can view payment Report of the church.</p>
+					<img alt="payment-report" src="images/admin/report/payment_report.png"><br><br>
+
+					<h5><strong><li> Payment Data</li></strong></h5>
+					<p>You can view payment Data of the church.</p>
+					<img alt="payment-report" src="images/admin/report/payment_data.png"><br><br>
+				
+					<h5><strong><li> Activity Report</li></strong></h5>
+					<p>You can view activity Report.</p>
+					<img alt="report" src="images/admin/report/activity_report.png"><br><br>
+					<h5><strong><li> Download Report</li></strong></h5>
+					<p>You can download Report in CSV  file.</p>
+					<img alt="report" src="images/admin/report/download-report.png">
+				</ol>
+				<hr>
+			</section>
+
+			<section id="gifts">
+				<h4><strong>22) Notice</strong></h4>	
+				<p>Here you can add new Notice and manage all notice as well as view a complete list of all notice.</p>
+				<img alt="gift-list" src="images/admin/notice/notilce_list.png"><br><br>
+				<ol>
+					<h5><strong><li>Add Notice</li></strong></h5> 
+					<p>You can also add a new notice.</p>
+					<img alt="gift" src="images/admin/notice/notice_add.png"><br><br>
+
+					<h5><strong><li>View Notice Detail</li></strong></h5> 
+					<p></p>
+					<img alt="gift" src="images/admin/notice/view_notice.png">
+				</ol>
+				<hr>
+			</section>
+
+
+			<section id="Message">
+				<h4><strong>23) Message/Inbox</strong></h4>
+				<p>You can compose a new Message and view list of all Messages.</p>
+				<img alt="inbox" src="images/admin/message/inbox.png"><br><br>
+				<ol>	
+					<h5><strong><li id="compose">Compose:</li></strong></h5>
+					<p>Must fill all required fields in Compose message. </p>
+					<img alt="Events" src="images/admin/message/compose_mail.png"><br><br>
+					<ul>
+						<li><strong>Message To</strong>: Select Receive Role.</li>
+						<li><strong>Subject</strong>: Enter Subject of the Message.</li>
+						<li><strong>Message  Comment</strong>: Enter Message Comments.</li>
+					</ul>
+					<br>
+					<h5><strong><li id="sent">Sent:</li></strong></h5>
+					<p>view list of all sends Messages.</p>
+					<img alt="Events" src="images/admin/message/sent_itemlist.png">
+				</ol>
+				<hr>
+			</section>
+
+			<section id="mail-chimp">
+            	<h4><strong>24) Newsletter</strong></h4>
+            	<p>You can alert members related to news-letter using mail-chimp integration. For that, you have to enter your mail-chimp API Key in setting page.</p>
+				<img alt="mailchimp" src="images/admin/newsletter/mail_chimpsetting.png"><br><br>
+            	<ol>
+					<h5><strong><li id="sync_mail">Sync Mail</li></strong></h5>
+					<img alt="Events" src="images/admin/newsletter/mailchim-sync.png"><br><br>
+					<ul>
+						<li><strong>Group List</strong>: select all the group you want to send the newsletter.</li>
+						<li><strong>Mailing list</strong>: Select mailing list for add mail id of above selected all Groups members.</li>
+					</ul>
+					<h5><strong><li id="campaign">Campaign</li></strong></h5>
+            		<img alt="Events" src="images/admin/newsletter/mail_chimp_compain.png"><br><br>
+					<ul>
+						<li><strong>MailChimp list</strong>: Select MailChimp list for send newsletter.</li>
+						<li><strong>Campaign list</strong>: Select Campaign list which you want to send all members of above-selected mailing list members.</li>
+					</ul>
+				</ol>
+				<hr>
+			</section>
+
+
+			<section id="assets_inventory_manage">
+				<h4><strong>25) Mail Templates :</strong></h4>	
+			   <p>From this module, you can set notification mail templates. You can also enable or disable this notification mail from general settings.</p>          
+				<img alt="document_list" src="images/admin/mail_template/mail template.png"><br><br>
+				<p> Each template also have shortcodes. So you can use that shortcodes in your mail template. Following Shortcodes are available in mail templates.</p>
+					<ul>
+						<li><strong>[CMGT_CHURCH_NAME] :</strong>  Display church name in mail.</li>
+						<li><strong>[CMGT_MEMBERNAME]  :</strong>  Display member name in mail.</li>
+						<li><strong>[CMGT_LOGIN_LINK]  :</strong>  Display login page link in mail.</li>
+						<li><strong>[CMGT_ROLE_NAME]  :</strong>  Display user role name in mail.</li>
+						<li><strong>[CMGT_USERNAME]   :</strong>  Display password in mail.</li>
+						<li><strong>[CMGT_PASSWORD]  :</strong>  Display user role name in mail.</li>
+						<li><strong>[CMGT_GROUPNAME]  :</strong>  Display  group name in mail.</li>
+						<li><strong>[CMGT_MINISTRY]  :</strong>  Display  ministry name in mail.</li>
+						<li><strong>[CMGT_NOTICE_TITLE]  :</strong>  Display notice title in mail.</li>
+						<li><strong>[CMGT_NOTICE_START_DATE] :</strong>  Display notice start date in mail.</li>
+						<li><strong>[CMGT_NOTICE_END_DATE] :</strong>  Display notice end date in mail.</li>
+						<li><strong>[CMGT_NOTICE_CONTENT]  :</strong>  Display notice content in mail.</li>
+						<li><strong>[CMGT_SERVICE_TITLE]   :</strong>  Display service title in mail.</li>
+						<li><strong>[CMGT_SERVICE_START_DATE]   :</strong>  Display service start date in mail.</li>
+						<li><strong>[CMGT_SERVICE_END_DATE]   :</strong>  Display service end date in mail.</li>
+						<li><strong>[CMGT_SERVICE_START_TIME]    :</strong>  Display service start time in mail.</li>
+						<li><strong>[CMGT_SERVICE_END_TIME]    :</strong>  Display service end time in mail.</li>
+						<li><strong>[CMGT_ACTIVITY_TITLE]   :</strong>  Display activity title in mail.</li>
+						<li><strong>[CMGT_ACTIVITY_VENUE]   :</strong>  Display activity venue in mail.</li>
+						<li><strong>[CMGT_ACTIVITY_REOCCURNCE]   :</strong>  Display activity recurrence in mail.</li>
+						<li><strong>[CMGT_ACTIVITY_TITLE]   :</strong>  Display activity title in mail.</li>
+						<li><strong>[CMGT_ACTIVITY_TITLE]   :</strong>  Display activity title in mail.</li>
+						<li><strong>[CMGT_ROOM_TITLE]   :</strong>  Display room title in mail.</li>
+						<li><strong>[CMGT_CHEKED_INDATE]  :</strong>  Display check in-date in mail.</li>
+						<li><strong>[CMGT_CHEKED_OUTDATE]  :</strong>  Display check in out-date in mail.</li>
+						<li><strong>[CMGT_NO_OF_FAMILY_MEMBER]  :</strong>  Display no of family member in mail.</li>
+						<li><strong>[CMGT_SERMON_TITLE]  :</strong>  Display sermon title in mail.</li>
+						<li><strong>[CMGT_SERMONADDEDBY] :</strong>  Display sermon Added by in mail.</li>
+						<li><strong>[CMGT_SERMON_DESCRIPTION] :</strong>  Display sermon description in mail.</li>
+						<li><strong>[CMGT_SONG_NAME]  :</strong>  Display song name in mail.</li>
+						<li><strong>[CMGT_SONGADDEDBY]   :</strong>  Display song added by in mail.</li>
+						<li><strong>[CMGT_SONG_CATEGORY]  :</strong>  Display song category in mail.</li>
+						<li><strong>[CMGT_SONG_DESCRIPTION]  :</strong>  Display song description in mail.</li>
+						<li><strong>[CMGT_PLEDGES_AMOUNT]  :</strong>  Display pledges amount in mail.</li>
+						<li><strong>[CMGT_PLEDGES_FREQUENCY]  :</strong>  Display pledges frequency in mail.</li>
+						<li><strong>[CMGT_PLEDGES_TOTAL_AMOUNT]   :</strong>  Display pledges amount in mail.</li>
+						<li><strong>[CMGT_GIFT_NAME]  :</strong>  Display gift name in mail.</li>
+						<li><strong>[CMGT_GIFT_PRICE]  :</strong>  Display gift price in mail.</li>
+						<li><strong>[CMGT_GIFT_GOT_DATE]  :</strong>  Display gift got date in mail.</li>
+						<li><strong>[CMGT_PAYMENT_LINK]  :</strong>  Display payment link in mail.</li>
+						<li><strong>[CMGT_DONATION_TYPE] :</strong>  Display donation in mail.</li>
+						<li><strong>[CMGT_DONATION_AMOUNT] :</strong>  Display donation amount in mail.</li>
+						<li><strong>[CMGT_DONATION_DATE] :</strong>  Display donation date in mail.</li>
+						<li><strong>[CMGT_DONATION_TYPE] :</strong>  Display donation in mail.</li>
+						<li><strong>[CMGT_DONATION_TYPE] :</strong>  Display donation in mail.</li>
+						<li><strong>[CMGT_INVOICE_LINK] :</strong>  Display invoice link in mail.</li>
+						<li><strong>[CMGT_RECEIVER_NAME] :</strong>  Display receiver name of message in mail.</li>
+						<li><strong>[CMGT_SENDER_NAME] :</strong>  Display sender name of message in mail.</li>
+						<li><strong>[CMGT_PASTORAL_TITLE] :</strong>  Display pastoral title in mail.</li>
+						<li><strong>[CMGT_PASTORAL_TIME] :</strong>  Display pastoral time in mail.</li>
+						<li><strong>[CMGT_PASTORAL_DESCRIPTION] :</strong>  Display pastoral description in mail.</li>
+						<li><strong>[CMGT_MESSAGE_CONTENT] :</strong>  Display message content of message in mail.</li>
+						<li><strong>[CMGT_MESSAGE_CONTENT] :</strong>  Display message content of message in mail.</li>
+					</ul>
+				<hr>
+			</section>
+			
+			<section id="mail-chimp">
+				<h4><strong>26) Access Right</strong></h4>
+				<p>Here you can give access right to every user role.</p>
+				<img alt="mailchimp" src="images/admin/access_right/access_right.png"><br><br><br>
+				<img alt="mailchimp" src="images/admin/access_right/access_right_accountant.png"><br><br>
+				<img alt="mailchimp" src="images/admin/access_right/access_right_family.png"><br><br>
+			   
+				<hr>
+			</section>
+	</section>
+         
+		
+		 <section id="member_view">
+			<h3><strong>D)  Member View</strong></h3>
+			<section id="member-dashboard">
+            <p>Click on <strong>Dashboard</strong> for view member side dashboard.</p> 
+            <img alt="" src="images/member/member_dashboard.png"><br><br>           
+           <hr>
+        </section>
+		
+		<section id="Member-list">
+            <h4><strong>1) Member</strong></h4>
+            <p>Click on <strong>Member</strong> for view Member list. But a member can view own details.</p>
+			<p>For view own detail click on <strong>View</strong> button. </p> 
+            <img alt="member list" src="images/member/member/view_member_ memberside.png"><br><br>   
+
+			<h5><strong><li id="view_detail">View Detail</li></strong></h5> 
+			<p>For view own detail click on <strong>View Member</strong> button. </p>
+			<img alt="view detail" src="images/member/member/member_view.png">
+            <br>
+			
+            <hr>
+        </section>
+
+		<section id="Member-list">
+            <h4><strong>2) Family Member</strong></h4>
+            <p></p>
+            <img alt="member list" src="images/member/family/view_family.png"><br><br>   
+
+			<h5><strong><li id="view_detail">View Detail</li></strong></h5> 
+			<p></p>
+			<img alt="view detail" src="images/member/family/view_family_detalie.png">
+            <br>
+			
+            <hr>
+        </section>
+
+		<section id="Member-list">
+            <h4><strong>3) Accountant</strong></h4>
+			<p>Click on <strong>Accountant</strong> for view accountant list.</p> 
+            <img alt="member list" src="images/member/Accountant/view_Accountant.png"><br><br>   
+
+			<h5><strong><li id="view_detail">View Detail</li></strong></h5> 
+			<p></p>
+			<img alt="view detail" src="images/member/Accountant/view_Accountant_detalie.png">
+            <br>
+			
+            <hr>
+        </section>
+		
+		<section id="group-list">
+		 <h4><strong>4) Group</strong></h4>
+		 <p>Here member can view all groups on the list.</p>
+			<ol>
+			<h5><strong><li>Group List:</li></strong></h5>
+            <p>Click on <strong>Group</strong> for view complete list all Groups in church.</p>
+            <img alt="" src="images/member/group/group_list.png"><br><br>           
+			
+			<h5><strong><li>View </li></strong></h5>
+			 <p>Click on <strong>View</strong> for view all members of this Group in church.</p>
+			   <img alt="view-groupmember" src="images/member/group/view-group-members.png">
+			</ol>
+			<hr>
+        </section>
+
+		<section id="group-list">
+			<h4><strong>5) Ministry</strong></h4>
+			<p>Here member can view all groups on the list.</p>
+			   <ol>
+			   <h5><strong><li>Ministry List</li></strong></h5>
+			   <p>Click on <strong>Ministry</strong> for view complete list all Ministry in church.</p>
+			   <img alt="" src="images/member/group/ministry_list.png"><br><br>           
+			   
+			   <h5><strong><li>View </li></strong></h5>
+				<p>Click on <strong>View</strong> for view all members of this Ministry in church.</p>
+				  <img alt="view-groupmember" src="images/member/group/view-ministry-members.png"> 
+			   </ol>
+			   <hr>
+		   </section>
+		
+		<section id="activity">
+            <h4><strong>6) Services</strong></h4>
+            <p>Click on <strong>Services</strong> for view services list.</p> 
+            <img alt="" src="images/member/service/service_list.png"><br><br>      
+			<ol>
+				<h5><strong><li>View Services Detail</li></strong></h5>
+				<p></p>
+				<img alt="" src="images/member/service/service_detail.png">  
+			</ol>  
+			<hr>
+        </section>
+
+		<section id="activity">
+            <h4><strong>7) Pastoral</strong></h4>
+            <p>Click on <strong>Pastoral</strong> for view Pastoral list.</p> 
+            <img alt="" src="images/member/Pastoral/Pastoral_list.png"><br><br>      
+			<ol>
+				<h5><strong><li>View Pastoral Detail</li></strong></h5>
+				<p></p>
+				<img alt="" src="images/member/Pastoral/Pastoral_detail.png"> 
+			</ol>   
+			<hr>
+        </section>
+
+
+		
+		<section id="activity">
+            <h4><strong>8) Activity</strong></h4>
+            <p>Click on <strong>Activity</strong> for view activity list.</p> 
+            <img alt="" src="images/member/Activity/activity_list.png"><br><br>           
+			
+			<ol>
+				<h5><strong><li>View Activity Detail</li></strong></h5>
+				<p></p>
+				<img alt="" src="images/member/Activity/activity_detail.png"> 
+			</ol>   
+			<hr>
+        </section>
+
+		<section id="venue">
+            <h4><strong>9) Venue</strong></h4>
+            <p>Click on <strong>Venue</strong> for view venue list.</p> 
+            <img alt="" src="images/member/Venue/venue_list.png">    
+			<ol>
+				<h5><strong><li>View Venue Detail</li></strong></h5>
+				<p></p>
+				<img alt="" src="images/member/Venue/venue_detail.png"> 
+			</ol>       
+			
+			<hr>
+        </section>
+
+		<section id="sermon">
+            <h4><strong>10) Reservation List</strong></h4>
+            <p>Click on <strong>Reservation List</strong> for view Reservation list.</p> 
+            <img alt="" src="images/member/Reservation/reservation_list.png"><br><br>           
+			<ol>
+				<h5><strong><li>Reservation </li></strong></h5>
+				<p>Click on <strong>Add Reservation</strong> for add new Reservation in church.</p>
+				<img alt="" src="images/member/Reservation/add_reservation.png"><br><br>  
+
+				<h5><strong><li>View Reservation Detail</li></strong></h5>
+				<p></p>
+				<img alt="" src="images/member/Reservation/view_detail.png">     
+			</ol>
+			<hr>
+        </section>
+
+
+		<section id="venue">
+            <h4><strong>11) Check-in</strong></h4>
+            <p>Click on <strong>Check-In</strong> for view room list.</p> 
+            <img alt="" src="images/member/Check-in/room_list.png"><br><br>           
+			<ol>
+			<h5><strong><li>View Check-Ins:</li></strong></h5>
+            <p>Click on <strong>View Check-Ins</strong> for view room details in church.</p>
+            <img alt="" src="images/member/Check-in/view-checkins.png">         
+			</ol>
+			<hr>
+        </section>
+
+		<section id="venue">
+            <h4><strong>12) Document</strong></h4>
+            <p>Click on <strong>Document</strong> for view Document list.</p> 
+            <img alt="" src="images/member/Document/Document_list.png"><br><br>    
+			<ol>
+				<h5><strong><li>View Document Detail</li></strong></h5>
+				<p></p>
+				<img alt="" src="images/member/Document/Document_detail.png"> 
+			</ol>       
+			
+			<hr>
+        </section>
+
+
+
+		<section id="sermon">
+            <h4><strong>13) Sermon List:</strong></h4>
+            <p>Click on <strong>Sermon List</strong> for view sermon list.</p> 
+            <img alt="" src="images/member/sermon/sermon_list.png"><br><br>           
+			<ol>
+			<h5><strong><li>View Sermon</li></strong></h5>
+            <p></p>
+            <img alt="" src="images/member/sermon/View_sermon.png">           
+			</ol>
+			<hr>
+        </section>
+
+
+		<section id="venue">
+            <h4><strong>14) Spiritual Gift</strong></h4>
+            <p>Click on <strong>Spiritual Gift</strong> for view gift list.</p> 
+            <img alt="" src="images/member/gift/Gift_list.png"><br><br>   
+			<ol>
+				<h5><strong><li>View Spiritual Gifts</li></strong></h5>
+				<p></p>
+				<img alt="" src="images/member/gift/view_gift.png"><br><br>   
+				
+				<h5><strong><li>Sell Gift List</li></strong></h5>
+				<p></p>
+				<img alt="" src="images/member/gift/sell_gift.png">  
+			</ol>        
+			<hr>
+        </section>
+
+		<section id="pledges">
+            <h4><strong>15) Pledges</strong></h4>
+            <p>Click on <strong>Pledges</strong> for view pledges list.</p> 
+            <img alt="" src="images/member/Pledges/pledges_list.png"><br><br>           
+			<ol>
+				<h5><strong><li>Add Pledges</li></strong></h5>
+				<p>Click on <strong>Add Pledges</strong> for add new Pledges in church.</p>
+				<img alt="add pledge" src="images/member/Pledges/add_pledges.png"><br><br>     
+				
+				<h5><strong><li>View Invoice</li></strong></h5>
+				<p></p>
+				<img alt="add pledge" src="images/member/Pledges/view_invoice.png">   
+			</ol>
+			<hr>
+        </section>
+
+
+		<section id="song">
+            <h4><strong>16) Song</strong></h4>
+            <p>Click on <strong>Song</strong> for view song list.</p> 
+            <img alt="" src="images/member/Song/song_list.png"><br><br>           
+			<ol>
+			<h5><strong><li>View Song</li></strong></h5>
+            <p></p>
+            <img alt="add_song" src="images/member/Song/song_view.png">         
+			</ol>
+			<hr>
+        </section>
+
+
+		<section id="venue">
+            <h4><strong>17) Notice List</strong></h4>
+            <p>Click on <strong>Notice</strong> for view only approved notice and also you can add a new notice.</p> 
+            <img alt="" src="images/member/Notice/notice_lists.png"><br><br>   
+			<ol>
+				<h5><strong><li>View Notice Detail</li></strong></h5>
+				<p></p>
+				<img alt="add pledge" src="images/member/Notice/notice_detail.png">         
+			</ol>			
+			<hr>
+        </section>
+
+		<section id="message">
+            <h4><strong>18) Message </strong></h4>
+            <p>Click on <strong>message</strong> for view all your message in the inbox.</p> 
+			<p>Here member can send a message to the other members and accountant.</p>
+            <img alt="" src="images/member/message/message_inbox.png"> 
+			<hr>
+        </section>
+
+		<section id="venue">
+            <h4><strong>19) Donation</strong></h4>
+            <p>Click on <strong>Donation</strong> to view own donation list.</p> 
+            <img alt="" src="images/member/Donation/Donation_list.png"><br><br>   
+			<ol>
+				<h5><strong><li>Add Donation:</li></strong></h5>
+				<p>Click on <strong>Add Donation</strong> for donate to the church.</p>
+				<img alt="add pledge" src="images/member/Donation/add_donation.png"><br><br>
+				
+				<h5><strong><li>View Invoice</li></strong></h5>
+				<p></p>
+				<img alt="add pledge" src="images/member/Donation/View_donation.png">
+			</ol>			
+			<hr>
+        </section>
+
+		<section id="venue">
+            <h4><strong>20) Payment</strong></h4>
+            <p></p> 
+            <img alt="" src="images/member/Payment/transaction_list.png"><br><br>   
+			<ol>
+				<h5><strong><li>Income List</li></strong></h5>
+				<p></p>
+				<img alt="add pledge" src="images/member/Payment/incom_list.png"><br><br>
+
+				<h5><strong><li>View Invoice</li></strong></h5>
+				<p></p>
+				<img alt="add pledge" src="images/member/Payment/view_invoice.png">
+			</ol>			
+			<hr>
+        </section>
+		
+		
+		<section id="member-profilepage">
+            <h4><strong>21) Account</strong></h4>
+            <p>Click on <strong>Account</strong> for view own profile page.</p> 
+			<p>Here member can also edit own profile. </p>
+            <img alt="" src="images/member/Account/member_profile.png"> 
+             <hr>
+        </section>
+		</section>
+		
+		
+		
+	
+		<section id="accountant_view">
+			<h3><strong>E)  Accountant View</strong></h3>
+			
+			<section id="Accountant-dashboard">
+            
+            <p>Click on <strong>Dashboard</strong> for view accountant side dashboard.</p> 
+            <img alt="" src="images/accountant/dashboard.png"><br><br>           
+           <p>We have already defined  some menus in member and admin view here available same menu are work same like that so that here we just define unique menu then member view.</p>
+		   </section>
+		   <section id="Invoice">
+            <h4><strong>1)  Payment</strong></h4>
+			<p>Click on <strong>Payment</strong> view all payment list.</p>
+			<img alt="add invoice" src="images/accountant/transaction_list.png"><br><br>
+			<h5><strong><li>Add Payment</li></strong></h5>
+		    <img alt="add invoice" src="images/accountant/add_transaction.png"><br><br>
+            <p>An accountant can add or manage payment.</p>
+			<h5><strong><li>Income list</li></strong></h5>
+		    <img alt="income list" src="images/accountant/income-list.png"><br><br>
+            <p>An accountant can also view a list of all income.</p>
+			<h5><strong><li>Add Income</li></strong></h5>
+		    <img alt="add income" src="images/accountant/add_income.png"><br><br>
+			<p>Here accountant can add more than one entry of income with the amount. so that can add many entries in one invoice. For add another entry click on <strong>Add Income Entry</strong> button. </p>
+            <p>An accountant can also add or manage income.</p>
+			<h5><strong><li>Expense list</li></strong></h5>
+		    <img alt="Expense list" src="images/accountant/expense-list.png"><br><br>
+            <p>An accountant can also view a list of all Expense.</p>
+			<h5><strong><li>Add Expense</li></strong></h5>
+		    <img alt="add income" src="images/accountant/add_expense.png"><br><br>
+            <p>An accountant can also add or manage Expense.</p>
+             <hr>
+			 
+        </section>
+		
+		</section>
+		<section id="family_member_view">
+			<h3><strong>E)  Family Member View</strong></h3>
+			
+			<section id="Family Member Dashboard">
+            
+            <p>Click on <strong>Dashboard</strong> to view family member side dashboard.</p> 
+            <img alt="" src="images/family_member/dashbord.png"><br><br>           
+           <p>We have already defined  some menus in member and admin view here available same menu are work same like that so that here we just define unique menu then member view.</p>
+		   <ol>
+			   <h5><strong><li>View Family Member Detail</li></strong></h5>
+				<img alt="" src="images/family_member/view_family_memebr.png"><br><br><br>           
+			 
+			   </ol>
+				 <hr>
+		   </section>
+		   
+		</section>
+		
+
+		<section id="fronted-login">
+			<h3><strong>F)  Fronted Login Page:</strong></h3>
+			<ol>
+			<section id="login-page-setting">
+			
+			  <p> After installing this plugin create a login page with simply create a page. </p>
+			   <h5><strong><li>Login page Setting:</li></strong></h5>
+				<img alt="" src="images/login_page_setting.png"><br><br>           
+			  <h5><strong><li>Frontend side Login Page:</li></strong></h5>
+				<img alt="" src="images/login-page.png"><br><br>           
+			   <p>Now all user can login from this login page. </p>
+			   </ol>
+				 <hr>
+			 
+        </section>
+		
+		</section>
+
+        
+          <section id="FAQ">
+          <h3><strong>G) FAQ</strong></h3>
+          	<p><strong>1) Don't See Church Management Login Page on page listing.</strong></p>
+          	<p>Don't worry, You can create a login from anywhere on your frontend page. you can add login form in two ways. </p>
+            <ol>
+            	<li>By using the shortcode [cmgt_login] of anywhere at any page</li>
+                <li>Using do_shortcode("[cmgt_login]") at template page</li>
+            </ol>   
+          	<p>If you want to have any paid customization as your requirement in this plugin you can contact us on <a href="">sales@mojoomla.com</a>.</p>
+            <hr>
+          </section>
+		  <section id="setting-up-Language">
+          	<h3><strong>H) Setting Up Language</strong></h3>
+          	
+			
+				The steps to do the translation are as follows. For eg let us consider translation to French.
+					<ol>
+                         <li>Download and install <strong>Poedit</strong>.</li>
+                        <li>Open the file church-management / <strong>languages</strong> folder &rarr; church_mgt-fr_FR.po using <strong>Poedit</strong> .</li>
+                        <li>Choose the Source text and set its corresponding French text in Translation Text Area.</li>
+                        <li>Save the changes.</li>
+                        <li>In wp-config.php config.php define the WPLANG as French. Syntax is define(‘WPLANG’, ‘fr_FR’);</li>
+                    </ol> 
+          </section>
+         
+                    <!-- start-footer-->
+          <div id="footer"> © 2023 Mojoomla All Rights Reserved. </div>
+          <!-- end-footer -->
+        </section>
+		
+      </div>
+      <!-- end-side-content -->
+    </div>
+    <!-- start-footer-->
+    <div id="footer-sm">  © 2023 Mojoomla All Rights Reserved. </div>
+    <!-- end-footer -->
+    <div class="white-space"></div>
+  </section>
+  <!-- container -->
+  <!-- end-footer -->
+  <span id="scroll-top"><a class="scrollup"></a></span> </div>
+<!-- end-wrap -->
+<!-- End Document
+================================================== -->
+<script src="js/jquery.jcarousel.min.js"></script>
+<script type="text/javascript" src="js/doubletaptogo.js" ></script>
+<script type="text/javascript" src="js/cube-custom.js" ></script>
+</body>
+</html>
