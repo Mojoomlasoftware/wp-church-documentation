@@ -39,7 +39,7 @@
         <div class="col-md-3 logo"> <a href="index.html"><img src="images/logo-warranty.png" width="150" id="img-logo" alt="logo"></a> </div>
         <div class="col-md-8 col-md-offset-1 desc">
           <h4 class="slight">Church Management System</h4>
-          <h5 class="slight"><small> Documented by Mojoomla - at Sep 16 2023</small></h5>
+          <h5 class="slight"><small> Documented by Mojoomla - at May 15 2024</small></h5>
         </div>
       </div>
       <div class="col-md-4">
@@ -50,8 +50,9 @@
             <li><a href="#Installation">Installation</a></li>
 			<li><a href="#admin_view">Admin view</a></li>
 			<li><a href="#member_view">Member</a></li>
-			<li><a href="#accountant_view">Accountant</a></li>
 			<li><a href="#family_member_view">Family Member</a></li>
+			<li><a href="#accountant_view">Accountant</a></li>
+			<li><a href="#management_user">Management</a></li>
 			<li><a href="#fronted-login">Fronted Login Page</a></li>
             <li><a href="#FAQ">FAQ</a></li>
 			 <li><a href="#setting-up-Language">setting up Language</a></li>
@@ -64,7 +65,7 @@
             <div class="col-md-3 logo"> <a href="index.html"><img src="images/logo.png"  id="img-logo" alt="logo"></a> </div>
             <div class="col-md-8 col-md-offset-1 desc">
               <h4 class="slight_color slight">Church Management System</h4>
-              <h5 class="slight"><small class="slight_color"> Documented by Mojoomla</a> - at Sep 16 2023</small></h5>
+              <h5 class="slight"><small class="slight_color"> Documented by Mojoomla</a> - at May 15 2024</small></h5>
             </div>
           </div>
           <hr class="vertical-space2">
@@ -164,13 +165,17 @@
                 <li><strong>Official Phone No: </strong>Enter the official  phone number of the church.</li>
                 <li><strong>Country: </strong>Enter country of church Located in.</li>
                 <li><strong>E-mail: </strong>Enter the official e-mail address of the church.</li>
-                <li><strong>Church Logo: </strong>Enter church logo.</li>
+                <li><strong>Church Header Logo: </strong>Enter header church logo.</li>
+                <li><strong>Other Logo: </strong>Enter Other logo for invoice, print and pdf.</li>
+                <li><strong>System Color: </strong>If you want change system color, then add System color.</li>
                 <li><strong>Profile Cover Image: </strong>Upload church photo and this will be used for profile background.</li>
-				 <li><strong>Enable Sandbox: </strong>This is enabled for keep PayPal sandbox account enable for testing purpose.</li>
-				 <li><strong>PayPal Email Id: </strong>Enter here your PayPal account email.</li>
-				 <li><strong>Select Currency: </strong>Select currency for your PayPal transaction.</li>
-				 <li><strong>Enable Notifications: </strong>Enable it if you want to send notification mail to members.</li>
-				 <li><strong>Paymaster Payment Gateways: </strong>Enable it if you want to use paymaster payment gateways.</li>
+				<li><strong>Enable Sandbox: </strong>This is enabled for keep PayPal sandbox account enable for testing purpose.</li>
+				<li><strong>PayPal Email Id: </strong>Enter here your PayPal account email.</li>
+				<li><strong>Select Currency: </strong>Select currency for your PayPal transaction.</li>
+				<li><strong>Enable Notifications: </strong>Enable it if you want to send notification mail to members.</li>
+				<li><strong>Paymaster Payment Gateways: </strong>Enable it if you want to use paymaster payment gateways.</li>
+				<li><strong>Want to add without Email ID & password?: </strong>Enable it if you want to add without Email ID & password.</li>
+				<li><strong>Family member can login?: </strong>Enable it if you want to Family member can login.</li>
             </ol>
             	  
             </ul>
@@ -192,7 +197,12 @@
 				<h5><strong><li>Add Member Information</li></strong></h5> 
 				<p>Here you can add a new member by filling this above form.</p>
             
-            	<img alt="add-member " src="images/admin/member/add_member.png"><br><br>
+				<img alt="add-member " src="images/admin/member/add_member.png"><br><br>
+				
+				<h5><strong><li>Edit Member Information</li></strong></h5> 
+				<p>Here you can edit member's information.</p>
+            
+            	<img alt="add-member " src="images/admin/member/edit_member.png"><br><br>
 					<ul>
 						<!-- <li>Here you can add a new member by filling this above form.</li> -->
 						<!--<li><strong>Member Id</strong>: Here member id will be automatically generate for each new member. So that you not need to enter this field.</li>
@@ -277,41 +287,20 @@
 			<hr>
             </section>
 			
-			<section id="document">
-            <h4><strong>4) Document</strong></h4>	
-            <p>You can add a new document and view a list of all documents.</p>
-           
-            <img alt="group" src="images/admin/document/view document.png"><br><br>
-			
-			<ol>
-				<h5><strong><li>Add Document</li></strong></h5> 
-				<p> </p>
-				<img alt="document" src="images/admin/document/add document.png"><br><br>
-				<ul>
-					<li><strong>Document Name</strong>: Enter new document name.</li>
-					<li><strong>Document</strong>: Select document file.</li>
-						<li><strong>Description</strong>: Enter document description.</li>
-				</ul>
-				<br>
-				<h5><strong><li>View Document Detail</li></strong></h5> 
-				<p> </p>
-				<img alt="document" src="images/admin/document/view_document_popup.png"><br><br>
-
-			</ol>
-			<hr>
-            </section>
-			
-			
 			<section id="family_member">
-            <h4><strong>5)Family Member</strong></h4>	
+            <h4><strong>4)Family Member</strong></h4>	
             <p>You can add a new family member and manage all family members, as well as view a complete list of all family members.</p>
-           
             <img alt="group" src="images/admin/family/view_family_member.png"><br><br>
 			
 			<ol>
 				<h5><strong><li>Add Family Member</li></strong></h5> 
 				<p>Here you can add a new family member by filling this above form.</p>
 				<img alt="teacher" src="images/admin/family/add_family.png"><br><br>
+
+				<h5><strong><li>Edit Family Member</li></strong></h5> 
+				<p>Here you can edit a family member's information.</p>
+				<img alt="teacher" src="images/admin/family/edit_family.png"><br><br>
+
 				<ul>
 					<!-- <li>Here you can add a new family member by filling this above form.</li> -->
 				</ul>
@@ -328,8 +317,8 @@
             </section>
 
 			<section id="family_member">
-				<h4><strong>6)Accountant</strong></h4>	
-				<p>Here you can add new accountant and manage all accountant same like members as well as view a complete list of all accountants.</p>
+				<h4><strong>5)Accountant</strong></h4>	
+				<p>Here you can add new accountants and manage all accountants same like members as well as view a complete list of all accountants.</p>
 			   
 				<img alt="group" src="images/admin/accountant/accountant_list.png"><br><br>
 				
@@ -337,6 +326,10 @@
 					<h5><strong><li>Add Accountant</li></strong></h5> 
 					<p>Here you can add a new Accountant by filling this above form.</p>
 					<img alt="teacher" src="images/admin/accountant/add_accountant.png"><br><br>
+
+					<h5><strong><li>Edit Accountant</li></strong></h5> 
+					<p>Here you can edit an Accountant's information.</p>
+					<img alt="teacher" src="images/admin/accountant/edit_accountant.png"><br><br>
 					<ul>
 						<!-- <li></li> -->
 					</ul>
@@ -350,13 +343,17 @@
 				</section>
 
 			<section id="ministry">
-				<h4><strong>7) Group</strong></h4>	
+				<h4><strong>6) Group</strong></h4>	
 			   <p>You can add new Group and manage all Group as well as view a complete list of all Group.</p>
 			   <img alt="service" src="images/admin/group/group_list.png"><br><br>
 			   <ol>
 				   <h5><strong><li>Add Group</li></strong></h5> 
 				   <p>You can also add new Group by filling this form. </p>
 				   <img alt="Ministry" src="images/admin/group/add_group.png"><br><br>
+
+				   <h5><strong><li>Edit Group</li></strong></h5> 
+				   <p>You can also edit Group details. </p>
+				   <img alt="Ministry" src="images/admin/group/edit_group.png"><br><br>
 				   <ul>
 				   </ul>
 
@@ -368,7 +365,7 @@
 			</section>
 
 			<section id="ministry">
-			 <h4><strong>8) Ministry</strong></h4>	
+			 <h4><strong>7) Ministry</strong></h4>	
             <p>You can add new Ministry and manage all Ministries as well as view a complete list of all Ministries.</p>
            
             <img alt="service" src="images/admin/ministry/ministry_list.png"><br><br>
@@ -377,6 +374,10 @@
 				<h5><strong><li>Add Ministry</li></strong></h5> 
 				<p>You can also add new Ministry by filling this form. </p>
 				<img alt="Ministry" src="images/admin/ministry/add_ministry.png"><br><br>
+
+				<h5><strong><li>Edit Ministry</li></strong></h5> 
+				<p>You can also edit Ministry's details. </p>
+				<img alt="Ministry" src="images/admin/ministry/edit_ministry.png"><br><br>
 				<ul>
 						
 						<!--<li><strong>Service Name</strong>: Enter new Service name.</li>
@@ -397,8 +398,8 @@
             </section>
 
 			<section id="services">
-				<h4><strong>9) Services</strong></h4>	
-				<p>You can add new Service and manage all Services as well as view a complete list of all Services.</p>
+				<h4><strong>8) Services</strong></h4>	
+				<p>You can add new Services and manage all Services as well as view a complete list of all Services.</p>
 			   
 				<img alt="service" src="images/admin/service/services_list.png"><br><br>
 				
@@ -406,6 +407,10 @@
 					<h5><strong><li>Add Service</li></strong></h5> 
 					<p> You can also add new service by filling this form.</p>
 					<img alt="service" src="images/admin/service/add_services.png"><br><br>
+
+					<h5><strong><li>Edit Service</li></strong></h5> 
+					<p> You can also edit service details.</p>
+					<img alt="service" src="images/admin/service/edit_services.png"><br><br>
 					<ul>
 							
 							<!--<li><strong>Service Name</strong>: Enter new Service name.</li>
@@ -424,7 +429,7 @@
 			</section>
 
 			<section id="services">
-				<h4><strong>10) Pastoral</strong></h4>	
+				<h4><strong>9) Pastoral</strong></h4>	
 				<p>You can add new Pastoral and manage all Pastoral as well as view a complete list of all Pastoral.</p>
 			   
 				<img alt="service" src="images/admin/pastoral/pastoral_list.png"><br><br>
@@ -433,6 +438,10 @@
 					<h5><strong><li>Add Pastoral</li></strong></h5> 
 					<p> You can also add new Pastoral by filling this form.</p>
 					<img alt="service" src="images/admin/pastoral/add_pastoral.png"><br><br>
+
+					<h5><strong><li>Edit Pastoral</li></strong></h5> 
+					<p> You can also edit Pastoral details.</p>
+					<img alt="service" src="images/admin/pastoral/edit_pastoral.png"><br><br>
 					<ul>
 							
 							<!--<li><strong>Service Name</strong>: Enter new Service name.</li>
@@ -451,12 +460,21 @@
 			</section>
 
 			<section id="activity">
-				<h4><strong>11) Attendance</strong></h4>	
-			   <p>You can also take attendance of members activities wise.</p>
-		  
-			   <img alt="service" src="images/admin/attendance/attendance.png"><br><br>
+				<h4><strong>10) Attendance</strong></h4>	
+			   <p>You can also take attendance of activities and Ministry.</p>
+		  		<br>
 		   
 			   <ol>
+					<h5><strong><li>Activity Attendance List</li></strong></h5> 
+					<p>Here you can see activity attendance list. </p>
+					<img alt="Activity_attendance" src="images/admin/attendance/activity_attendance_list.png"><br><br>
+					<h5><strong><li>Activity Attendance</li></strong></h5> 
+					<p>Here you can also manage activity attendance. </p>
+					<img alt="Activity_attendance" src="images/admin/attendance/activity_attendance.png"><br><br>
+			   
+					<h5><strong><li>Ministry Attendance List</li></strong></h5> 
+					<p>Here you can see ministry attendance list. </p>
+					<img alt="Activity_attendance" src="images/admin/attendance/ministry_attendance_list.png"><br><br>
 				   <h5><strong><li>Ministry Attendance</li></strong></h5> 
 				   <p>Here you can also manage ministry attendance. </p>
 				   <img alt="Ministry_attendance" src="images/admin/attendance/ministry_attendance.png"><br><br>
@@ -465,8 +483,8 @@
 		   </section>
 
 			<section id="activity">
-			 	<h4><strong>12) Activity</strong></h4>	
-            	<p>You can add a new activity and manage all activities as well as view a complete list of all activities.</p>
+			 	<h4><strong>11) Activity</strong></h4>	
+            	<p>You can add a new activity and manage all activities, as well as view a complete list of all activities.</p>
            
             	<img alt="service" src="images/admin/activity/activity_list.png"><br><br>
 			
@@ -474,6 +492,10 @@
 					<h5><strong><li>Add Activity</li></strong></h5> 
 					<p>You can also add new Activity by filling this form. </p>
 					<img alt="Ministry" src="images/admin/activity/add_activity.png"><br><br>
+
+					<h5><strong><li>Edit Activity</li></strong></h5> 
+					<p>You can also edit Activity details. </p>
+					<img alt="Ministry" src="images/admin/activity/edit_activity.png"><br><br>
 					<ul>
 							
 							<!--<li><strong>Service Name</strong>: Enter new Service name.</li>
@@ -489,17 +511,22 @@
 					</ul>
 				</ol>
 				<hr>
-            </section>
-			
+			</section>
+
 			<section id="venue">
-			 <h4><strong>13) Venue</strong></h4>	
-            <p>You can add new venue and manage all venue as well as view a complete list of all venue.</p>
+			 <h4><strong>12) venues</strong></h4>	
+            <p>You can add new venues and manage all venues as well as view a complete list of all venues.</p>
 				<img alt="service" src="images/admin/venue/vanue_list.png"><br><br>
 
 				<ol>
 					<h5><strong><li>Add Venue</li></strong></h5> 
 					<p>You can also add new Venue by filling this form. </p>
 					<img alt="Ministry" src="images/admin/venue/add_vanue.png"><br><br>
+
+					<h5><strong><li>Edit Venue</li></strong></h5> 
+					<p>You can also edit Venue details. </p>
+					<img alt="Ministry" src="images/admin/venue/edit_vanue.png"><br><br>
+
 					<ul>
 							
 							<!--<li><strong>Service Name</strong>: Enter new Service name.</li>
@@ -518,14 +545,18 @@
             </section>
 
 			<section id="venue">
-				<h4><strong>14) Reservation</strong></h4>	
-			   <p>You can add new Reservation and manage all Reservation as well as view a complete list of all Reservation.</p>
+				<h4><strong>13) Reservations</strong></h4>	
+			   <p>You can add new Reservations and manage all Reservations as well as view a complete list of all Reservations.</p>
 				   <img alt="service" src="images/admin/reservation/reservation_list.png"><br><br>
    
 				   <ol>
 					   <h5><strong><li>Add Reservation</li></strong></h5> 
 					   <p>You can also add new Reservation by filling this form. </p>
 					   <img alt="Ministry" src="images/admin/reservation/add_reservation.png"><br><br>
+
+					   <h5><strong><li>Edit Reservation</li></strong></h5> 
+					   <p>You can also edit Reservation details. </p>
+					   <img alt="Ministry" src="images/admin/reservation/edit_reservation.png"><br><br>
 					   <ul>
 							   
 							   <!--<li><strong>Service Name</strong>: Enter new Service name.</li>
@@ -544,19 +575,56 @@
 			   </section>
 
 			<section id="check-in">
-			 <h4><strong>15) Check-In</strong></h4>	
-            <p>Here you can add new room and manage all rooms check-in,check-out process as well as view a complete list of all rooms check-in history.</p>
+			 <h4><strong>14) Check-In</strong></h4>	
+            <p>Here you can add a new room and manage all room's check-in, and check-out processes as well as view a complete list of all room's check-in history.</p>
 			<img alt="room" src="images/admin/check_in/check_in_room_list.png"><br><br>
 			
 			<ol>
 				<h5><strong><li>Add check-In</li></strong></h5> 
 				<p>You can also check-in in the room.</p>
 				<img alt="check-in" src="images/admin/check_in/check_in_form.png"><br><br>
+
 				<h5><strong><li>Add Room</li></strong></h5> 
 				<p>You can also add a new room.</p>
 				<img alt="check-in" src="images/admin/check_in/add_room.png"><br><br>
+
+				<h5><strong><li>Edit Room</li></strong></h5> 
+				<p>You can also edit a room details.</p>
+				<img alt="check-in" src="images/admin/check_in/edit_room.png"><br><br>
+
+				<h5><strong><li>View Check-In</li></strong></h5> 
+				<p>You can also view check-in.</p>
+				<img alt="check-in" src="images/admin/check_in/view_checkin.png"><br><br>
 				</ol>
 			<hr>
+			</section>
+			
+			<section id="document">
+				<h4><strong>15) Document</strong></h4>	
+				<p>You can add a new document and view a list of all documents.</p>
+			
+				<img alt="group" src="images/admin/document/view_document.png"><br><br>
+				
+				<ol>
+					<h5><strong><li>Add Document</li></strong></h5> 
+					<p>Here you can add a new document by filling this above form.</p>
+					<img alt="document" src="images/admin/document/add_document.png"><br><br>
+
+					<ul>
+						<li><strong>Document Name</strong>: Enter new document name.</li>
+						<li><strong>Document</strong>: Select document file.</li>
+						<li><strong>Description</strong>: Enter document description.</li>
+					</ul>
+					<br>
+					<h5><strong><li>Edit Document</li></strong></h5> 
+					<p>Here you can Edit a document details.</p>
+					<img alt="document" src="images/admin/document/edit_document.png"><br><br>
+					<h5><strong><li>View Document Detail</li></strong></h5> 
+					<p> </p>
+					<img alt="document" src="images/admin/document/view_document_popup.png"><br><br>
+
+				</ol>
+				<hr>
             </section>
 
 			<section id="serman">
@@ -568,6 +636,10 @@
 					<p>You can also add new Sermon.</p>
 					<img alt="check-in" src="images/admin/sermon/sermon_add.png"><br><br>
 
+					<h5><strong><li>Edit Sermon</li></strong></h5> 
+					<p>You can also edit new Sermon.</p>
+					<img alt="check-in" src="images/admin/sermon/sermon_edit.png"><br><br>
+
 					<h5><strong><li>View Sermon Detail</li></strong></h5> 
 					<p></p>
 					<img alt="Ministry" src="images/admin/sermon/sermon_detail.png"><br><br>
@@ -578,14 +650,22 @@
 
 			<section id="gifts">
 				<h4><strong>17) Spiritual Gifts</strong></h4>	
-			   <p>Here you can add new gift and manage all gift as well as view a complete list of all gift. View invoice and also can be print-out it.</p>
+			   <p>Here you can add new gifts and manage all gifts, as well as view a complete list of all gifts. View the invoice and also can be print-out it.</p>
 			   <img alt="gift-list" src="images/admin/gifts/spirituale_gift.png"><br><br>
 			   <ol>
 				   <h5><strong><li>Add Spiritual Gift</li></strong></h5> 
 				   <p>You can also add a new spiritual gift.</p>
 				   <img alt="gift" src="images/admin/gifts/add_spiritual_gift.png"><br><br>
 
-					<h5><strong><li>Add Spiritual Gift</li></strong></h5> 
+				   <h5><strong><li>Edit Spiritual Gift</li></strong></h5> 
+				   <p>You can also edit a spiritual gift.</p>
+				   <img alt="gift" src="images/admin/gifts/edit_spiritual_gift.png"><br><br>
+
+				   <h5><strong><li>Give Gift</li></strong></h5> 
+				   <p>You can also give gift to member.</p>
+				   <img alt="gift" src="images/admin/gifts/give_gift_member.png"><br><br>
+
+					<h5><strong><li>View Spiritual Gift</li></strong></h5> 
 					<p></p>
 					<img alt="gift" src="images/admin/gifts/view_spiritual_gift.png"><br><br>
 
@@ -593,9 +673,17 @@
 				   <p>here sell gift spiritual gift.</p>
 				   <img alt="gift" src="images/admin/gifts/sell_gift.png"><br><br>
 
-				   <h5><strong><li>Add Sell Gift</li></strong></h5> 
-					<p></p>
+				   	<h5><strong><li>Add Sell Gift</li></strong></h5> 
+					<p>Here you can add a sell gift.</p>
 					<img alt="gift" src="images/admin/gifts/add_sell.png"><br><br>
+
+					<h5><strong><li>Edit Sell Gift</li></strong></h5> 
+					<p>Here you can edit a sell gift.</p>
+					<img alt="gift" src="images/admin/gifts/edit_sell.png"><br><br>
+
+					<h5><strong><li>View Sell Gift Invoice</li></strong></h5> 
+					<p>You can view of sell gift invoice.</p>
+					<img alt="gift" src="images/admin/gifts/sell_gift_invoice.png"><br><br>
 			   </ol>
 			   <hr>
 		   	</section>
@@ -609,6 +697,10 @@
 					<p>You can also add new Pledges.</p>
 					<img alt="check-in" src="images/admin/pledges/pledges_add.png"><br><br>
 
+					<h5><strong><li>Edit Pledges</li></strong></h5> 
+					<p>You can also edt Pledges details.</p>
+					<img alt="check-in" src="images/admin/pledges/pledges_edit.png"><br><br>
+
 					<h5><strong><li>View Invoice</li></strong></h5> 
 					<p></p>
 					<img alt="check-in" src="images/admin/pledges/view_invoice.png"><br><br>
@@ -617,13 +709,17 @@
 			</section>
 
 			<section id="song">
-			 <h4><strong>19) Song List</strong></h4>	
-            <p>Here you can add new Song and manage all Song as well as view s complete list of all Songs.</p>
+			 <h4><strong>19) Songs List</strong></h4>	
+            <p>Here you can add new Songs and manage all Songs as well as view s complete list of all Songs.</p>
 			<img alt="room" src="images/admin/song/song_list.png"><br><br>
 				<ol>
 					<h5><strong><li>Add Song</li></strong></h5> 
 					<p>You can also add new Song.</p>
 					<img alt="check-in" src="images/admin/song/add_song.png"><br><br>
+
+					<h5><strong><li>Edit Song</li></strong></h5> 
+					<p>You can also edit Song details.</p>
+					<img alt="check-in" src="images/admin/song/edit_song.png"><br><br>
 
 					<h5><strong><li>View Song</li></strong></h5> 
 					<p>You can also View Song.</p>
@@ -638,8 +734,12 @@
 				<img alt="transaction list" src="images/admin/payment/transaction_list.png"><br><br>
 				<ol>	
 					<h5><strong><li>Add Transaction</li></strong></h5>
-					<p>Must fill all required fields in adding Transaction form for add new Transaction.</p>
+					<p>Must fill all required fields in the adding Transaction form to add a new Transaction.</p>
 					<img alt="Diagnosis Report" src="images/admin/payment/add_transaction.png"><br><br>
+
+					<h5><strong><li>Edit Transaction</li></strong></h5>
+					<p>Here you can edit a Transaction details.</p>
+					<img alt="Diagnosis Report" src="images/admin/payment/edit_transaction.png"><br><br>
 						
 				</ol>
 			
@@ -649,7 +749,12 @@
             	<ol>
 					<h5><strong><li>Add Income</li></strong></h5>
 					<p>Must fill all required fields in adding Income form for add new Income. </p>
-            		<img alt="Diagnosis Report" src="images/admin/payment/add_income.png"><br><br>
+					<img alt="Diagnosis Report" src="images/admin/payment/add_income.png"><br><br>
+					
+					<h5><strong><li>Edit Income</li></strong></h5>
+					<p>Here you can edit Income details. </p>
+					<img alt="Diagnosis Report" src="images/admin/payment/edit_income.png"><br><br>
+					
 					<ul>
 						<li><strong>Member</strong>: The select member for income.</li>
 						<li><strong>Income label</strong>: Enter income label for income.</li>
@@ -663,11 +768,16 @@
 				</ol>
 				<h5><strong><li>Expense List</li></strong></h5>
 			 	<p>You can add an Expense and view a complete list of all Expense.</p>
-				<img alt="Expense" src="images/admin/payment/Expense_list.png"><br><br>
+				<img alt="Expense" src="images/admin/payment/expense_list.png"><br><br>
            	 	<ol>
 					<h5><strong><li>Add Expense:</li></strong></h5>
 					<p>Must fill all required fields in adding Expense form for add new Expense.</p>
-            		<img alt="Expense" src="images/admin/payment/add_expense.png"><br><br>
+					<img alt="Expense" src="images/admin/payment/add_expense.png"><br><br>
+					
+					<h5><strong><li>Edit Expense:</li></strong></h5>
+					<p>Here you can edit expense details.</p>
+					<img alt="Expense" src="images/admin/payment/edit_expense.png"><br><br>
+					
 					<ul>
 						<li><strong>Supplier Name</strong>: Select Supplier Name for expense.</li>
 						<li><strong>Status</strong>: select status of expense payment method.</li>	
@@ -678,33 +788,57 @@
 					</ul>
 				</ol>
 					<h5><strong><li>View Invoice</li></strong></h5>
-					<p>You can also print invoice, income, and expense. For that just click on view invoice link of list invoice and a pop-up will open then click on <strong>Print/Pdf</strong> button from the pop-up.</p>
+					<p>You can also print invoices, income, and expenses. For that just click on the view invoice link of the list invoice and a pop-up will open then click on the <strong>Print/Pdf</strong> button from the pop-up.</p>
 					<img alt="print)invoice" src="images/admin/payment/view_invoice.png"><br><br>
 				
 					<hr>
 			</section>
 
 			<section id="payment">
-				<h4><strong>21) Report</strong></h4>
+				<h4><strong>21) Reports</strong></h4>
 				<ol>
 					<h5><strong><li> Attendance Report</li></strong></h5>
 			
-					<p>You can view attendance Report by selecting time period.</p>
-					<p>Must be filled both required fields of view this report. </p>
-						<ul>
-							<li><strong>Start Date</strong>: select start date.</li>
-							<li><strong>End Date</strong>: Select End date.</li>
-						</ul>
-					<img alt="attendance-report" src="images/admin/report/attendance_report.png"><br><br>
-				
-					<h5><strong><li> Payment Report</li></strong></h5>
-					<p>You can view payment Report of the church.</p>
-					<img alt="payment-report" src="images/admin/report/payment_report.png"><br><br>
+					<p>You can view attendance Report by selecting Datatype.</p>
+					
+					<ol>
+						<h5><strong><li> Activity Attendance</li></strong></h5>
+						<p>You can view activity attendance Report of the church.</p>
+						<img alt="payment-report" src="images/admin/report/activity_attendance.png"><br><br>
 
-					<h5><strong><li> Payment Data</li></strong></h5>
-					<p>You can view payment Data of the church.</p>
-					<img alt="payment-report" src="images/admin/report/payment_data.png"><br><br>
-				
+						<h5><strong><li> Ministry Attendance</li></strong></h5>
+						<p>You can view ministry attendance Report of the church.</p>
+						<img alt="payment-report" src="images/admin/report/ministry_attendance.png"><br><br>
+					</ol>
+					
+					<h5><strong><li>Finance/Payment Report</li></strong></h5>
+					<p>You can view finance/payment Report of the church.</p>
+					<ol>
+						<h5><strong><li> Transaction/Donation Report</li></strong></h5>
+						<p>You can view transaction/donation datatable Report of the church.</p>
+						<img alt="payment-report" src="images/admin/report/transaction_donation_report.png"><br><br>
+						<p>You can view transaction/donation graph Report of the church.</p>
+						<img alt="payment-report" src="images/admin/report/transaction_donation_graph.png"><br><br>
+
+						<h5><strong><li> Income Report</li></strong></h5>
+						<p>You can view income datatable Report of the church.</p>
+						<img alt="payment-report" src="images/admin/report/income_report.png"><br><br>
+						<p>You can view income graph Report of the church.</p>
+						<img alt="payment-report" src="images/admin/report/income_graph.png"><br><br>
+
+						<h5><strong><li> Expense Report</li></strong></h5>
+						<p>You can view expense datatable Report of the church.</p>
+						<img alt="payment-report" src="images/admin/report/expense_report.png"><br><br>
+						<p>You can view expense graph Report of the church.</p>
+						<img alt="payment-report" src="images/admin/report/expense_graph.png"><br><br>
+
+						<h5><strong><li> Income Expense Report</li></strong></h5>
+						<p>You can view income - expense datatable Report of the church.</p>
+						<img alt="payment-report" src="images/admin/report/income_expense_report.png"><br><br>
+						<p>You can view income - expense graph Report of the church.</p>
+						<img alt="payment-report" src="images/admin/report/income_expense_graph.png"><br><br>
+					</ol>
+
 					<h5><strong><li> Activity Report</li></strong></h5>
 					<p>You can view activity Report.</p>
 					<img alt="report" src="images/admin/report/activity_report.png"><br><br>
@@ -723,6 +857,10 @@
 					<h5><strong><li>Add Notice</li></strong></h5> 
 					<p>You can also add a new notice.</p>
 					<img alt="gift" src="images/admin/notice/notice_add.png"><br><br>
+
+					<h5><strong><li>Edit Notice</li></strong></h5> 
+					<p>You can also edit a notice.</p>
+					<img alt="gift" src="images/admin/notice/notice_edit.png"><br><br>
 
 					<h5><strong><li>View Notice Detail</li></strong></h5> 
 					<p></p>
@@ -754,8 +892,8 @@
 			</section>
 
 			<section id="mail-chimp">
-            	<h4><strong>24) Newsletter</strong></h4>
-            	<p>You can alert members related to news-letter using mail-chimp integration. For that, you have to enter your mail-chimp API Key in setting page.</p>
+            	<h4><strong>24) Newsletters</strong></h4>
+            	<p>You can alert members related to newsletters using mail-chimp integration. For that, you have to enter your MailChimp API Key in the settings page.</p>
 				<img alt="mailchimp" src="images/admin/newsletter/mail_chimpsetting.png"><br><br>
             	<ol>
 					<h5><strong><li id="sync_mail">Sync Mail</li></strong></h5>
@@ -769,6 +907,27 @@
 					<ul>
 						<li><strong>MailChimp list</strong>: Select MailChimp list for send newsletter.</li>
 						<li><strong>Campaign list</strong>: Select Campaign list which you want to send all members of above-selected mailing list members.</li>
+					</ul>
+				</ol>
+				<hr>
+			</section>
+			<section id="sms-setting">
+            	<h4><strong>24) SMS Setting</strong></h4>
+            	<p>You can active default SMS notification. Select one message service</p>
+            	
+            	<ol>
+					<h5><strong><li id="MSG91">MSG91</li></strong></h5>
+					<img alt="mailchimp" src="images/admin/sms/msg91.png"><br><br>
+					<p>For MSG91, you have to enter your Authentication Key, Sender ID and Route in the settings page.</p>
+					<ul>
+						<li><strong>Authentication Key</strong>: Enter Authentication Key.</li>
+						<li><strong>Sender ID</strong>: Enter Sender ID.</li>
+						<li><strong>Route</strong>: Enter Route.</li>
+					</ul>
+					<h5><strong><li id="Clickatell">Clickatell</li></strong></h5>
+            		<img alt="Events" src="images/admin/sms/clickatell.png"><br><br>
+					<ul>
+						<li><strong>API Key</strong>: Enter API Key.</li>
 					</ul>
 				</ol>
 				<hr>
@@ -839,33 +998,34 @@
 			</section>
 			
 			<section id="mail-chimp">
-				<h4><strong>26) Access Right</strong></h4>
-				<p>Here you can give access right to every user role.</p>
+				<h4><strong>26) Access Rights</strong></h4>
+				<p>Here you can give access rights to every user role.</p>
 				<img alt="mailchimp" src="images/admin/access_right/access_right.png"><br><br><br>
 				<img alt="mailchimp" src="images/admin/access_right/access_right_accountant.png"><br><br>
 				<img alt="mailchimp" src="images/admin/access_right/access_right_family.png"><br><br>
+				<img alt="mailchimp" src="images/admin/access_right/access_right_management.png"><br><br>
 			   
 				<hr>
 			</section>
 	</section>
          
 		
-		 <section id="member_view">
+		<section id="member_view">
 			<h3><strong>D)  Member View</strong></h3>
 			<section id="member-dashboard">
-            <p>Click on <strong>Dashboard</strong> for view member side dashboard.</p> 
+            <p>Click on <strong>Dashboard</strong> to view the member side dashboard.</p> 
             <img alt="" src="images/member/member_dashboard.png"><br><br>           
            <hr>
         </section>
 		
 		<section id="Member-list">
             <h4><strong>1) Member</strong></h4>
-            <p>Click on <strong>Member</strong> for view Member list. But a member can view own details.</p>
-			<p>For view own detail click on <strong>View</strong> button. </p> 
+            <p>Click on <strong>Member</strong> to view the Member list. But a member can view their own details.</p>
+			<p>To view your own details click on the <strong>View</strong> button. </p> 
             <img alt="member list" src="images/member/member/view_member_ memberside.png"><br><br>   
 
 			<h5><strong><li id="view_detail">View Detail</li></strong></h5> 
-			<p>For view own detail click on <strong>View Member</strong> button. </p>
+			<p>to view the own detail click on <strong>View Member</strong> button. </p>
 			<img alt="view detail" src="images/member/member/member_view.png">
             <br>
 			
@@ -873,13 +1033,19 @@
         </section>
 
 		<section id="Member-list">
-            <h4><strong>2) Family Member</strong></h4>
+			<h4><strong>2) Family Member</strong></h4>
+			<p>Click on <strong>Family Member</strong> to view the family member list.</p> 
             <p></p>
             <img alt="member list" src="images/member/family/view_family.png"><br><br>   
 
 			<h5><strong><li id="view_detail">View Detail</li></strong></h5> 
-			<p></p>
+			<p>To view family member details click on the <strong>View</strong> button. </p>
 			<img alt="view detail" src="images/member/family/view_family_detalie.png">
+			<br>
+			
+			<h5><strong><li id="view_detail">Family Member Dashboard</li></strong></h5> 
+			<p>To login family member dashboard click on the <strong>Family member name</strong> button. </p>
+			<img alt="view detail" src="images/member/family/family_login.png">
             <br>
 			
             <hr>
@@ -887,11 +1053,11 @@
 
 		<section id="Member-list">
             <h4><strong>3) Accountant</strong></h4>
-			<p>Click on <strong>Accountant</strong> for view accountant list.</p> 
+			<p>Click on <strong>Accountant</strong> to view the accountant list.</p> 
             <img alt="member list" src="images/member/Accountant/view_Accountant.png"><br><br>   
 
 			<h5><strong><li id="view_detail">View Detail</li></strong></h5> 
-			<p></p>
+			<p>To view accountant details click on the <strong>View</strong> button. </p>
 			<img alt="view detail" src="images/member/Accountant/view_Accountant_detalie.png">
             <br>
 			
@@ -899,15 +1065,15 @@
         </section>
 		
 		<section id="group-list">
-		 <h4><strong>4) Group</strong></h4>
-		 <p>Here member can view all groups on the list.</p>
+			<h4><strong>4) Group</strong></h4>
+			<p>Here members can view all groups on the list.</p>
 			<ol>
 			<h5><strong><li>Group List:</li></strong></h5>
-            <p>Click on <strong>Group</strong> for view complete list all Groups in church.</p>
+            <p>Click on <strong>Group</strong> to view the complete list of all Groups in church.</p>
             <img alt="" src="images/member/group/group_list.png"><br><br>           
 			
 			<h5><strong><li>View </li></strong></h5>
-			 <p>Click on <strong>View</strong> for view all members of this Group in church.</p>
+			 <p>Click on <strong>View</strong> to view all members of this Group in church.</p>
 			   <img alt="view-groupmember" src="images/member/group/view-group-members.png">
 			</ol>
 			<hr>
@@ -915,14 +1081,14 @@
 
 		<section id="group-list">
 			<h4><strong>5) Ministry</strong></h4>
-			<p>Here member can view all groups on the list.</p>
+			<p>Here members can view all groups on the list.</p>
 			   <ol>
 			   <h5><strong><li>Ministry List</li></strong></h5>
-			   <p>Click on <strong>Ministry</strong> for view complete list all Ministry in church.</p>
+			   <p>Click on <strong>Ministry</strong> to view the complete list of all ministries in church.</p>
 			   <img alt="" src="images/member/group/ministry_list.png"><br><br>           
 			   
 			   <h5><strong><li>View </li></strong></h5>
-				<p>Click on <strong>View</strong> for view all members of this Ministry in church.</p>
+				<p>Click on <strong>View</strong> to view all members of this ministries in church.</p>
 				  <img alt="view-groupmember" src="images/member/group/view-ministry-members.png"> 
 			   </ol>
 			   <hr>
@@ -930,11 +1096,11 @@
 		
 		<section id="activity">
             <h4><strong>6) Services</strong></h4>
-            <p>Click on <strong>Services</strong> for view services list.</p> 
+            <p>Click on <strong>Services</strong> to view the services list.</p> 
             <img alt="" src="images/member/service/service_list.png"><br><br>      
 			<ol>
 				<h5><strong><li>View Services Detail</li></strong></h5>
-				<p></p>
+				<p>Click on <strong>View</strong> to view all Services Details.</p>
 				<img alt="" src="images/member/service/service_detail.png">  
 			</ol>  
 			<hr>
@@ -942,38 +1108,44 @@
 
 		<section id="activity">
             <h4><strong>7) Pastoral</strong></h4>
-            <p>Click on <strong>Pastoral</strong> for view Pastoral list.</p> 
+            <p>Click on <strong>Pastoral</strong> to view the Pastoral list.</p> 
             <img alt="" src="images/member/Pastoral/Pastoral_list.png"><br><br>      
 			<ol>
 				<h5><strong><li>View Pastoral Detail</li></strong></h5>
-				<p></p>
+				<p>Click on <strong>View</strong> to view all Pastoral Details.</p>
 				<img alt="" src="images/member/Pastoral/Pastoral_detail.png"> 
 			</ol>   
 			<hr>
         </section>
 
-
+		<section id="attendance">
+            <h4><strong>8) Attendance </strong></h4>
+            <p>Click on <strong>Attendance</strong> to view the activity Attendance list.</p> 
+			<img alt="" src="images/member/member_attendance.png"><br><br>          
+	  
+			<hr>
+        </section>
 		
 		<section id="activity">
-            <h4><strong>8) Activity</strong></h4>
-            <p>Click on <strong>Activity</strong> for view activity list.</p> 
+            <h4><strong>9) Activity</strong></h4>
+            <p>Click on <strong>Activity</strong> to view the activity list.</p> 
             <img alt="" src="images/member/Activity/activity_list.png"><br><br>           
 			
 			<ol>
 				<h5><strong><li>View Activity Detail</li></strong></h5>
-				<p></p>
+				<p>Click on <strong>View</strong> to view all Activity Details.</p>
 				<img alt="" src="images/member/Activity/activity_detail.png"> 
 			</ol>   
 			<hr>
         </section>
 
 		<section id="venue">
-            <h4><strong>9) Venue</strong></h4>
-            <p>Click on <strong>Venue</strong> for view venue list.</p> 
+            <h4><strong>10) Venue</strong></h4>
+            <p>Click on <strong>Venue</strong> to view the venue list.</p> 
             <img alt="" src="images/member/Venue/venue_list.png">    
 			<ol>
 				<h5><strong><li>View Venue Detail</li></strong></h5>
-				<p></p>
+				<p>Click on <strong>View</strong> to view all Venue Details.</p>
 				<img alt="" src="images/member/Venue/venue_detail.png"> 
 			</ol>       
 			
@@ -981,16 +1153,20 @@
         </section>
 
 		<section id="sermon">
-            <h4><strong>10) Reservation List</strong></h4>
-            <p>Click on <strong>Reservation List</strong> for view Reservation list.</p> 
+            <h4><strong>11) Reservation List</strong></h4>
+            <p>Click on <strong>Reservation List</strong> to view the Reservation list.</p> 
             <img alt="" src="images/member/Reservation/reservation_list.png"><br><br>           
 			<ol>
 				<h5><strong><li>Reservation </li></strong></h5>
-				<p>Click on <strong>Add Reservation</strong> for add new Reservation in church.</p>
-				<img alt="" src="images/member/Reservation/add_reservation.png"><br><br>  
+				<p>Click on <strong>Add Reservation</strong> to add a new Reservation in church.</p>
+				<img alt="" src="images/member/Reservation/add_reservation.png"><br><br>
+
+				<h5><strong><li>Edit Reservation </li></strong></h5>
+				<p>Click on <strong>edit Reservation</strong> to edit a Reservation in church.</p>
+				<img alt="" src="images/member/Reservation/add_reservation.png"><br><br>    
 
 				<h5><strong><li>View Reservation Detail</li></strong></h5>
-				<p></p>
+				<p>Click on <strong>View</strong> to view all Reservation Details.</p>
 				<img alt="" src="images/member/Reservation/view_detail.png">     
 			</ol>
 			<hr>
@@ -998,24 +1174,24 @@
 
 
 		<section id="venue">
-            <h4><strong>11) Check-in</strong></h4>
-            <p>Click on <strong>Check-In</strong> for view room list.</p> 
+            <h4><strong>12) Check-in</strong></h4>
+            <p>Click on <strong>Check-In</strong> to view the room list.</p> 
             <img alt="" src="images/member/Check-in/room_list.png"><br><br>           
 			<ol>
 			<h5><strong><li>View Check-Ins:</li></strong></h5>
-            <p>Click on <strong>View Check-Ins</strong> for view room details in church.</p>
+            <p>Click on <strong>View Check-Ins</strong> to view the room details in the church.</p>
             <img alt="" src="images/member/Check-in/view-checkins.png">         
 			</ol>
 			<hr>
         </section>
 
 		<section id="venue">
-            <h4><strong>12) Document</strong></h4>
-            <p>Click on <strong>Document</strong> for view Document list.</p> 
+            <h4><strong>14) Document</strong></h4>
+            <p>Click on <strong>Document</strong> to view the Document list.</p> 
             <img alt="" src="images/member/Document/Document_list.png"><br><br>    
 			<ol>
 				<h5><strong><li>View Document Detail</li></strong></h5>
-				<p></p>
+				<p>Click on <strong>View</strong> to view all Document Details.</p>
 				<img alt="" src="images/member/Document/Document_detail.png"> 
 			</ol>       
 			
@@ -1026,11 +1202,11 @@
 
 		<section id="sermon">
             <h4><strong>13) Sermon List:</strong></h4>
-            <p>Click on <strong>Sermon List</strong> for view sermon list.</p> 
+            <p>Click on <strong>Sermon List</strong> to view the sermon list.</p> 
             <img alt="" src="images/member/sermon/sermon_list.png"><br><br>           
 			<ol>
 			<h5><strong><li>View Sermon</li></strong></h5>
-            <p></p>
+            <p>Click on <strong>View</strong> to view all Sermon Details.</p>
             <img alt="" src="images/member/sermon/View_sermon.png">           
 			</ol>
 			<hr>
@@ -1039,31 +1215,39 @@
 
 		<section id="venue">
             <h4><strong>14) Spiritual Gift</strong></h4>
-            <p>Click on <strong>Spiritual Gift</strong> for view gift list.</p> 
+            <p>Click on <strong>Spiritual Gift</strong> to view the gift list.</p> 
             <img alt="" src="images/member/gift/Gift_list.png"><br><br>   
 			<ol>
 				<h5><strong><li>View Spiritual Gifts</li></strong></h5>
-				<p></p>
+				<p>Click on <strong>View</strong> to view all Spiritual Gifts Details.</p>
 				<img alt="" src="images/member/gift/view_gift.png"><br><br>   
 				
 				<h5><strong><li>Sell Gift List</li></strong></h5>
-				<p></p>
+				<p>Click on <strong>Sell Gift List</strong> to view the sell gift list.</p> 
 				<img alt="" src="images/member/gift/sell_gift.png">  
+
+				<h5><strong><li>View Invoice</li></strong></h5>
+				<p>Click on <strong>View Invoice</strong> to view the sell gift invoice.</p> 
+				<img alt="add pledge" src="images/member/gift/sell_gift_invoice.png">
 			</ol>        
 			<hr>
         </section>
 
 		<section id="pledges">
             <h4><strong>15) Pledges</strong></h4>
-            <p>Click on <strong>Pledges</strong> for view pledges list.</p> 
+            <p>Click on <strong>Pledges</strong> to view the pledges list.</p> 
             <img alt="" src="images/member/Pledges/pledges_list.png"><br><br>           
 			<ol>
 				<h5><strong><li>Add Pledges</li></strong></h5>
 				<p>Click on <strong>Add Pledges</strong> for add new Pledges in church.</p>
-				<img alt="add pledge" src="images/member/Pledges/add_pledges.png"><br><br>     
+				<img alt="add pledge" src="images/member/Pledges/add_pledges.png"><br><br>  
+				
+				<h5><strong><li>Edit Pledges</li></strong></h5>
+				<p>Click on <strong>Edit Pledges</strong> for edit Pledges in church.</p>
+				<img alt="edit pledge" src="images/member/Pledges/edit_pledges.png"><br><br>  
 				
 				<h5><strong><li>View Invoice</li></strong></h5>
-				<p></p>
+				<p>Click on <strong>View Invoice</strong> to view the Pledges invoice.</p> 
 				<img alt="add pledge" src="images/member/Pledges/view_invoice.png">   
 			</ol>
 			<hr>
@@ -1072,11 +1256,11 @@
 
 		<section id="song">
             <h4><strong>16) Song</strong></h4>
-            <p>Click on <strong>Song</strong> for view song list.</p> 
+            <p>Click on <strong>Song</strong> to view the song list.</p> 
             <img alt="" src="images/member/Song/song_list.png"><br><br>           
 			<ol>
 			<h5><strong><li>View Song</li></strong></h5>
-            <p></p>
+            <p>Click on <strong>View Song</strong> to view Song Details.</p>
             <img alt="add_song" src="images/member/Song/song_view.png">         
 			</ol>
 			<hr>
@@ -1085,11 +1269,11 @@
 
 		<section id="venue">
             <h4><strong>17) Notice List</strong></h4>
-            <p>Click on <strong>Notice</strong> for view only approved notice and also you can add a new notice.</p> 
+            <p>Click on <strong>Notice</strong> to view the only approved notice and also you can add a new notice.</p> 
             <img alt="" src="images/member/Notice/notice_lists.png"><br><br>   
 			<ol>
 				<h5><strong><li>View Notice Detail</li></strong></h5>
-				<p></p>
+				<p>Click on <strong>View Notice</strong> to view notice Details.</p>
 				<img alt="add pledge" src="images/member/Notice/notice_detail.png">         
 			</ol>			
 			<hr>
@@ -1097,39 +1281,103 @@
 
 		<section id="message">
             <h4><strong>18) Message </strong></h4>
-            <p>Click on <strong>message</strong> for view all your message in the inbox.</p> 
+            <p>Click on <strong>message</strong> to view the all your message in the inbox.</p> 
 			<p>Here member can send a message to the other members and accountant.</p>
-            <img alt="" src="images/member/message/message_inbox.png"> 
+			<img alt="" src="images/member/message/message_inbox.png"> 
+			<ol>
+				<h5><strong><li>Add Message</li></strong></h5>
+				<p>Click on <strong>Add Message</strong>  icon to send a message.</p>
+				<img alt="add pledge" src="images/member/Notice/notice_detail.png">         
+			</ol>
 			<hr>
         </section>
 
 		<section id="venue">
             <h4><strong>19) Donation</strong></h4>
-            <p>Click on <strong>Donation</strong> to view own donation list.</p> 
+            <p>Click on <strong>Donation</strong> to view your own donation list.</p> 
             <img alt="" src="images/member/Donation/Donation_list.png"><br><br>   
 			<ol>
 				<h5><strong><li>Add Donation:</li></strong></h5>
-				<p>Click on <strong>Add Donation</strong> for donate to the church.</p>
+				<p>Click on <strong>Add Donation</strong> to donate to the church.</p>
 				<img alt="add pledge" src="images/member/Donation/add_donation.png"><br><br>
+
+				<h5><strong><li>Edit Donation:</li></strong></h5>
+				<p>Click on <strong>Edit Donation</strong> edit Donation details.</p>
+				<img alt="edit pledge" src="images/member/Donation/edit_donation.png"><br><br>
 				
 				<h5><strong><li>View Invoice</li></strong></h5>
-				<p></p>
+				<p>Click on <strong>View Invoice</strong> to view donate invoice.</p>
 				<img alt="add pledge" src="images/member/Donation/view_donation.png">
 			</ol>			
 			<hr>
-        </section>
+		</section>
+		
+		<section id="payment">
+			<h4><strong>20) Reports</strong></h4>
+			<ol>
+				<h5><strong><li> Attendance Report</li></strong></h5>
+		
+				<p>You can view attendance Report by selecting Datatype.</p>
+				
+				<ol>
+					<h5><strong><li> Activity Attendance</li></strong></h5>
+					<p>You can view activity attendance Report of the church.</p>
+					<img alt="payment-report" src="images/member/report/activity_attendance.png"><br><br>
+
+					<h5><strong><li> Ministry Attendance</li></strong></h5>
+					<p>You can view ministry attendance Report of the church.</p>
+					<img alt="payment-report" src="images/member/report/ministry_attendance.png"><br><br>
+				</ol>
+				
+				<h5><strong><li>Finance/Payment Report</li></strong></h5>
+				<p>You can view finance/payment Report of the church.</p>
+				<ol>
+					<h5><strong><li> Transaction/Donation Report</li></strong></h5>
+					<p>You can view transaction/donation datatable Report of the church.</p>
+					<img alt="payment-report" src="images/member/report/transaction_donation_report.png"><br><br>
+					<p>You can view transaction/donation graph Report of the church.</p>
+					<img alt="payment-report" src="images/member/report/transaction_donation_graph.png"><br><br>
+
+					<h5><strong><li> Income Report</li></strong></h5>
+					<p>You can view income datatable Report of the church.</p>
+					<img alt="payment-report" src="images/member/report/income_report.png"><br><br>
+					<p>You can view income graph Report of the church.</p>
+					<img alt="payment-report" src="images/member/report/income_graph.png"><br><br>
+
+					<h5><strong><li> Expense Report</li></strong></h5>
+					<p>You can view expense datatable Report of the church.</p>
+					<img alt="payment-report" src="images/member/report/expense_report.png"><br><br>
+					<p>You can view expense graph Report of the church.</p>
+					<img alt="payment-report" src="images/member/report/expense_graph.png"><br><br>
+
+					<h5><strong><li> Income Expense Report</li></strong></h5>
+					<p>You can view income - expense datatable Report of the church.</p>
+					<img alt="payment-report" src="images/member/report/income_expense_report.png"><br><br>
+					<p>You can view income - expense graph Report of the church.</p>
+					<img alt="payment-report" src="images/member/report/income_expense_graph.png"><br><br>
+				</ol>
+
+				<h5><strong><li> Activity Report</li></strong></h5>
+				<p>You can view activity Report.</p>
+				<img alt="report" src="images/member/report/activity_report.png"><br><br>
+				<h5><strong><li> Download Report</li></strong></h5>
+				<p>You can download Report in CSV  file.</p>
+				<img alt="report" src="images/member/report/download-report.png">
+			</ol>
+			<hr>
+		</section>
 
 		<section id="venue">
             <h4><strong>20) Payment</strong></h4>
-            <p></p> 
+			<p>Click on <strong>Transaction</strong> to view the all transaction list.</p> 
             <img alt="" src="images/member/Payment/transaction_list.png"><br><br>   
 			<ol>
 				<h5><strong><li>Income List</li></strong></h5>
-				<p></p>
+				<p>Click on <strong>Income</strong> to view the all income list.</p>
 				<img alt="add pledge" src="images/member/Payment/incom_list.png"><br><br>
 
 				<h5><strong><li>View Invoice</li></strong></h5>
-				<p></p>
+				<p>Click on <strong>View Invoice</strong> to view all invoices.</p>
 				<img alt="add pledge" src="images/member/Payment/view_invoice.png">
 			</ol>			
 			<hr>
@@ -1138,8 +1386,8 @@
 		
 		<section id="member-profilepage">
             <h4><strong>21) Account</strong></h4>
-            <p>Click on <strong>Account</strong> for view own profile page.</p> 
-			<p>Here member can also edit own profile. </p>
+            <p>Click on <strong>Account</strong> to view your own profile page.</p> 
+			<p>Here members can also edit their own profiles. </p>
             <img alt="" src="images/member/Account/member_profile.png"> 
              <hr>
         </section>
@@ -1147,41 +1395,6 @@
 		
 		
 		
-	
-		<section id="accountant_view">
-			<h3><strong>E)  Accountant View</strong></h3>
-			
-			<section id="Accountant-dashboard">
-            
-            <p>Click on <strong>Dashboard</strong> for view accountant side dashboard.</p> 
-            <img alt="" src="images/accountant/dashboard.png"><br><br>           
-           <p>We have already defined  some menus in member and admin view here available same menu are work same like that so that here we just define unique menu then member view.</p>
-		   </section>
-		   <section id="Invoice">
-            <h4><strong>1)  Payment</strong></h4>
-			<p>Click on <strong>Payment</strong> view all payment list.</p>
-			<img alt="add invoice" src="images/accountant/transaction_list.png"><br><br>
-			<h5><strong><li>Add Payment</li></strong></h5>
-		    <img alt="add invoice" src="images/accountant/add_transaction.png"><br><br>
-            <p>An accountant can add or manage payment.</p>
-			<h5><strong><li>Income list</li></strong></h5>
-		    <img alt="income list" src="images/accountant/income-list.png"><br><br>
-            <p>An accountant can also view a list of all income.</p>
-			<h5><strong><li>Add Income</li></strong></h5>
-		    <img alt="add income" src="images/accountant/add_income.png"><br><br>
-			<p>Here accountant can add more than one entry of income with the amount. so that can add many entries in one invoice. For add another entry click on <strong>Add Income Entry</strong> button. </p>
-            <p>An accountant can also add or manage income.</p>
-			<h5><strong><li>Expense list</li></strong></h5>
-		    <img alt="Expense list" src="images/accountant/expense-list.png"><br><br>
-            <p>An accountant can also view a list of all Expense.</p>
-			<h5><strong><li>Add Expense</li></strong></h5>
-		    <img alt="add income" src="images/accountant/add_expense.png"><br><br>
-            <p>An accountant can also add or manage Expense.</p>
-             <hr>
-			 
-        </section>
-		
-		</section>
 		<section id="family_member_view">
 			<h3><strong>E)  Family Member View</strong></h3>
 			
@@ -1189,9 +1402,10 @@
             
             <p>Click on <strong>Dashboard</strong> to view family member side dashboard.</p> 
             <img alt="" src="images/family_member/dashbord.png"><br><br>           
-           <p>We have already defined  some menus in member and admin view here available same menu are work same like that so that here we just define unique menu then member view.</p>
+           <p>We have already defined some menus in the member and admin view here available menus work the same as that, so here we just define a unique menu and then member view.</p>
 		   <ol>
 			   <h5><strong><li>View Family Member Detail</li></strong></h5>
+			   <p>Click on <strong>Family Member</strong> to view the family members.</p> 
 				<img alt="" src="images/family_member/view_family_memebr.png"><br><br><br>           
 			 
 			   </ol>
@@ -1199,10 +1413,76 @@
 		   </section>
 		   
 		</section>
-		
 
+		<section id="accountant_view">
+			<h3><strong>F)  Accountant View</strong></h3>
+			
+			<section id="Accountant-dashboard">
+            
+            <p>Click on <strong>Dashboard</strong> to view the accountant side dashboard.</p> 
+            <img alt="" src="images/accountant/dashboard.png"><br><br>           
+           	<p>We have already defined some menus in the member and admin view here available menu works the same as that, so here we just define the unique menu and then the member view.</p>
+		   </section>
+		   <section id="Invoice">
+            <h4><strong>1)  Transaction</strong></h4>
+			<p>Click on <strong>Transaction,</strong> and view all transaction lists.</p>
+			<img alt="add invoice" src="images/accountant/transaction_list.png"><br><br>
+			<h5><strong><li>Add Transaction</li></strong></h5>
+			<p>An accountant can add or manage Transaction.</p>
+			<img alt="add invoice" src="images/accountant/add_transaction.png"><br><br>
+			<h5><strong><li>Edit Transaction</li></strong></h5>
+			<p>An accountant can edit Transaction details.</p>
+		    <img alt="add invoice" src="images/accountant/edit_transaction.png"><br><br>
+
+			<h5><strong><li>Income list</li></strong></h5>
+			<p>An accountant can also view a list of all income.</p>
+			<img alt="income list" src="images/accountant/income-list.png"><br><br>
+			
+			<h5><strong><li>Add Income</li></strong></h5>
+			<p>Here, the accountant can add more than one entry of income with the amount. So that can add many entries in one invoice. To add another entry, click on the <strong>Add Income Entry</strong> button. </p>
+            <p>An accountant can also add or manage income.</p>
+			<img alt="add income" src="images/accountant/add_income.png"><br><br>
+			<h5><strong><li>Edit Income</li></strong></h5>
+            <p>An accountant can also edit income details.</p>
+			<img alt="add income" src="images/accountant/edit_income.png"><br><br>
+			
+			<h5><strong><li>Expense list</li></strong></h5>
+			<p>An accountant can also view a list of all expenses.</p>
+		    <img alt="Expense list" src="images/accountant/expense-list.png"><br><br>
+            
+			<h5><strong><li>Add Expense</li></strong></h5>
+			<p>An accountant can also add or manage expenses.</p>
+			<img alt="add income" src="images/accountant/add_expense.png"><br><br>
+			<h5><strong><li>Edit Expense</li></strong></h5>
+			<p>An accountant can also edit expenses details.</p>
+		    <img alt="add income" src="images/accountant/add_expense.png"><br><br>
+            <h5><strong><li>View Invoice</li></strong></h5>
+			<p>You can also print invoices, income, and expenses. For that just click on the view invoice link of the list invoice and a invoice will open then click on the <strong>Print/Pdf</strong> button from the invoice page.</p>
+			<img alt="print)invoice" src="images/accountant/view_invoice.png"><br><br>
+				
+             <hr>
+			 
+        </section>
+		
+		</section>
+
+
+		<section id="management_user">
+			<h3><strong>G)  Management:</strong></h3>
+			<ol>
+			<section id="login-page-setting">
+			
+			   <h5><strong><li>Create management user:</li></strong></h5>
+			   <p> Go to the admin dashboard. Click on Users, then click on Add new. Here we can create new management user. </p>
+				<img alt="" src="images/management_user.png"><br><br> 
+			   </ol>
+				 <hr>
+			 
+		</section>
+		
+		
 		<section id="fronted-login">
-			<h3><strong>F)  Fronted Login Page:</strong></h3>
+			<h3><strong>H)  Fronted Login Page:</strong></h3>
 			<ol>
 			<section id="login-page-setting">
 			
@@ -1221,18 +1501,18 @@
 
         
           <section id="FAQ">
-          <h3><strong>G) FAQ</strong></h3>
-          	<p><strong>1) Don't See Church Management Login Page on page listing.</strong></p>
-          	<p>Don't worry, You can create a login from anywhere on your frontend page. you can add login form in two ways. </p>
+          <h3><strong>I) FAQ</strong></h3>
+          	<p><strong>1) Don't See the Church Management Login Page on the page listing.</strong></p>
+          	<p>Don't worry, You can create a login from anywhere on your frontend page. You can add a login form in two ways. </p>
             <ol>
-            	<li>By using the shortcode [cmgt_login] of anywhere at any page</li>
+            	<li>By using the shortcode [cmgt_login] anywhere on any page</li>
                 <li>Using do_shortcode("[cmgt_login]") at template page</li>
             </ol>   
-          	<p>If you want to have any paid customization as your requirement in this plugin you can contact us on <a href="">sales@mojoomla.com</a>.</p>
+          	<p>If you want to have any paid customization as your requirement in this plugin, you can contact us at <a href="">sales@mojoomla.com</a>.</p>
             <hr>
           </section>
 		  <section id="setting-up-Language">
-          	<h3><strong>H) Setting Up Language</strong></h3>
+          	<h3><strong>I) Setting Up Language</strong></h3>
           	
 			
 				The steps to do the translation are as follows. For eg let us consider translation to French.
