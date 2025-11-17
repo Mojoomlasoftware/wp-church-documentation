@@ -20,9 +20,7 @@
 <!-- JS
          ================================================== -->
 <script type="text/javascript" src="js/jquery.min.js" ></script>
-<!--[if lt IE 9]>
-      <script src="js/modernizr.custom.11889.js" type="text/javascript"></script>
-      <![endif]-->
+
 <!-- HTML5 Shiv events (end)-->
 <!-- Favicons
          ================================================== -->
@@ -39,7 +37,7 @@
         <div class="col-md-3 logo"> <a href="index.html"><img src="images/logo-warranty.png" width="150" id="img-logo" alt="logo"></a> </div>
         <div class="col-md-8 col-md-offset-1 desc">
           <h4 class="slight">Church Management System</h4>
-          <h5 class="slight"><small> Documented by Mojoomla - at May 15 2024</small></h5>
+          <h5 class="slight"><small> Documented by Mojoomla - at July 07 2025</small></h5>
         </div>
       </div>
       <div class="col-md-4">
@@ -52,6 +50,7 @@
 			<li><a href="#member_view">Member</a></li>
 			<li><a href="#family_member_view">Family Member</a></li>
 			<li><a href="#accountant_view">Accountant</a></li>
+			<li><a href="#support_staff_view">Support Staff</a></li>
 			<li><a href="#management_user">Management</a></li>
 			<li><a href="#fronted-login">Fronted Login Page</a></li>
             <li><a href="#FAQ">FAQ</a></li>
@@ -65,7 +64,7 @@
             <div class="col-md-3 logo"> <a href="index.html"><img src="images/logo.png"  id="img-logo" alt="logo"></a> </div>
             <div class="col-md-8 col-md-offset-1 desc">
               <h4 class="slight_color slight">Church Management System</h4>
-              <h5 class="slight"><small class="slight_color"> Documented by Mojoomla</a> - at May 15 2024</small></h5>
+              <h5 class="slight"><small class="slight_color"> Documented by Mojoomla</a> - at July 07 2025</small></h5>
             </div>
           </div>
           <hr class="vertical-space2">
@@ -75,9 +74,9 @@
 			Church Management System for WordPress plugin is the ideal way to manage complete Church operation. It has different user roles as Member, Volunteer, Accountant and Admin users. 
 			</p>
           <p>This user guide covers all options that this plugin provides. Please read the documentation carefully as it probably contains answers to most of the questions that may arise. If you feel some aspect is not covered or have some questions, contact us via e-mail sales@mojoomla.com. We will do our best to answer you in the shortest time.</p>
-          <!-- <hr class="vertical-space2"> -->
+        
           <section id="Package">
-            <!-- <hr class="vertical-space2"> -->
+        
 			<hr>
           
           <section id="Installation">
@@ -127,7 +126,7 @@
 				 <h3><strong>C)  Admin View</strong></h3>
 				 <p><strong>Dashboard:</strong> Admin side dashboard view.</p>
 				<img alt="Install plugin" src="images/admin/admin_dashboard.png">
-				<!-- <p>Admin Can send a birthday wish to the member by message and mail.</p> -->
+				
             <hr>
 			</section>
 			
@@ -152,32 +151,56 @@
           <section id="General-Settings">
             <h4><strong>2) General Settings</strong></h4>
             <p>Click on <strong>General Setting</strong> under church management link-list to start setting up the system . You are advised to fill all fields of General settings as these details are used the different section of the whole system .You can change these settings as per your requirement.</p>
-            <img alt="" src="images/admin/general-settings.png">
+            <h5><strong>1) General Settings</strong></h5>
+			<img alt="" src="images/admin/general-settings.png">
             <br>
             <br>
              <ul>
-              
-            <ol>
-
-            	<li><strong>Church Name:</strong> Enter a name of the church.</li>
-                <li><strong>Starting Year: </strong>Enter starting year of the church. </li>
-                <li><strong>Church Address: </strong>Enter address of the church.</li>
-                <li><strong>Official Phone No: </strong>Enter the official  phone number of the church.</li>
-                <li><strong>Country: </strong>Enter country of church Located in.</li>
-                <li><strong>E-mail: </strong>Enter the official e-mail address of the church.</li>
-                <li><strong>Church Header Logo: </strong>Enter header church logo.</li>
-                <li><strong>Other Logo: </strong>Enter Other logo for invoice, print and pdf.</li>
-                <li><strong>System Color: </strong>If you want change system color, then add System color.</li>
-                <li><strong>Profile Cover Image: </strong>Upload church photo and this will be used for profile background.</li>
-				<li><strong>Enable Sandbox: </strong>This is enabled for keep PayPal sandbox account enable for testing purpose.</li>
-				<li><strong>PayPal Email Id: </strong>Enter here your PayPal account email.</li>
-				<li><strong>Select Currency: </strong>Select currency for your PayPal transaction.</li>
-				<li><strong>Enable Notifications: </strong>Enable it if you want to send notification mail to members.</li>
-				<li><strong>Paymaster Payment Gateways: </strong>Enable it if you want to use paymaster payment gateways.</li>
-				<li><strong>Want to add without Email ID & password?: </strong>Enable it if you want to add without Email ID & password.</li>
-				<li><strong>Family member can login?: </strong>Enable it if you want to Family member can login.</li>
-            </ol>
-            	  
+				<ol>
+					<li><strong>Church Name:</strong> Enter a name of the church.</li>
+					<li><strong>Starting Year: </strong>Enter starting year of the church. </li>
+					<li><strong>Church Address: </strong>Enter address of the church.</li>
+					<li><strong>Official Phone No: </strong>Enter the official  phone number of the church.</li>
+					<li><strong>Country: </strong>Enter country of church Located in.</li>
+					<li><strong>E-mail: </strong>Enter the official e-mail address of the church.</li>
+					<li><strong>Church Header Logo: </strong>Enter header church logo.</li>
+					<li><strong>Other Logo: </strong>Enter Other logo for invoice, print and pdf.</li>
+					<li><strong>System Color: </strong>If you want change system color, then add System color.</li>
+					<li><strong>Profile Cover Image: </strong>Upload church photo and this will be used for profile background.</li>
+					<li><strong>Enable Sandbox: </strong>This is enabled for keep PayPal sandbox account enable for testing purpose.</li>
+					<li><strong>PayPal Email Id: </strong>Enter here your PayPal account email.</li>
+					<li><strong>Select Currency: </strong>Select currency for your PayPal transaction.</li>
+					<li><strong>Enable Notifications: </strong>Enable it if you want to send notification mail to members.</li>
+					<li><strong>Paymaster Payment Gateways: </strong>Enable it if you want to use paymaster payment gateways.</li>
+					<li><strong>Want to add without Email ID & password?: </strong>Enable it if you want to add without Email ID & password.</li>
+					<li><strong>Family member can login?: </strong>Enable it if you want to Family member can login.</li>
+				</ol>
+            </ul>
+			<br>
+			<h5><strong>2) Mobile App Settings</strong></h5>
+			<img alt="" src="images/admin/mobile_app_settings.png">
+            <br>
+            <br>
+			<p>If you don't have Mobile App License Key, you can get it from mojoomla.com</p>
+             <ul>
+				<ol>
+					<li><strong>App License key:</strong> Enter a Mobile App License Key.</li>
+					<li><strong>Email: </strong>Enter App Email ID. </li>
+				</ol>
+            </ul>
+            <br>
+			<h5><strong>3) Document Settings</strong></h5>
+			<img alt="" src="images/admin/document_settings.png">
+            <br>
+            <br>
+			<p>Here admin can set upload document Extension & size.
+             <ul>
+				<ol>
+					<li><strong>Document Extension:</strong> Select Document extension.</li>
+					<li><strong>Document Size(MB): </strong>Enter Document Size in MB. </li>
+					<li><strong>Profile Extension:</strong> Select Profile extension.</li>
+					<li><strong>Profile Size(MB): </strong>Enter Profile Size in MB. </li>
+				</ol>
             </ul>
              <hr>
             </section>
@@ -204,36 +227,7 @@
             
             	<img alt="add-member " src="images/admin/member/edit_member.png"><br><br>
 					<ul>
-						<!-- <li>Here you can add a new member by filling this above form.</li> -->
-						<!--<li><strong>Member Id</strong>: Here member id will be automatically generate for each new member. So that you not need to enter this field.</li>
-						<li><strong>Name</strong>: Enter new member name.</li>
-						<li><strong>Gender</strong>: Select Gender For member.</li>
-						<li><strong>Date Of Birth</strong>: Enter date of birth for member.</li>
-						<li><strong>Class</strong>: Select class for member.</li>
-						<li><strong>Group</strong>: Select group for member. you can also select multiple groups for one member.</li>
-						<li><strong>Home Town Address</strong>: Enter home town address of member.</li>
-						<li><strong>City</strong>: Enter city name of member.</li>				
-						<li><strong>Mobile Number</strong>: Enter mobile number of member.</li>
-						<li><strong>Email</strong>: Enter email id of member. Email ID must be unique.</li>
-						<li><strong>Weight</strong>: Enter the Weight of member.</li>
-						<li><strong>Height</strong>: Enter the Height of member.</li>
-						<li><strong>Chest</strong>: Enter the Chest of member.</li>
-						<li><strong>Waist</strong>: Enter the Waist of member.</li>
-						<li><strong>Thigh</strong>: Enter the Thigh of member.</li>
-						<li><strong>Arms</strong>: Enter the Arms of member.</li>
-						<li><strong>Username</strong>: Enter username to enable member login. Username must be unique. </li>
-						<li><strong>Password</strong>: Enter password of member for login.</li>
-						<li><strong>Image</strong>: Upload profile image of member.</li>
-						<li><strong>Select Staff Member</strong>: Selecr staff member for instruct to this member.</li>
-						<li><strong>Intrested Area</strong>: Selec intrested area of member.</li>
-						<li><strong>Source</strong>: Select source which through you join gym.</li>
-						<li><strong>Reffered By</strong>: Select Staff member reference member for this gym.</li>
-						<li><strong>Inquiry Date</strong>: Enter the inquiry date of member.</li>
-						<li><strong>Trial End Date</strong>: Enter the trial end date of member.</li>
-						<li><strong>Membership</strong>: Select membership which is selected by member.</li>
-						<li><strong>Auto Renew</strong>: Select the oetion of auto renue for renue selected membership.</li>
-						<li><strong>Begin Date</strong>: Enter the begin date of member.</li>
-						<li><strong>First Payment Date</strong>: Enter the first payment date of member.</li>-->
+					
 						
 					</ul>
             <br> 
@@ -302,16 +296,14 @@
 				<img alt="teacher" src="images/admin/family/edit_family.png"><br><br>
 
 				<ul>
-					<!-- <li>Here you can add a new family member by filling this above form.</li> -->
+					
 				</ul>
 				<br>
 
 				<h5><strong><li>View Family Member</li></strong></h5> 
 				<p> </p>
 				<img alt="teacher" src="images/admin/family/view_family.png"><br><br>
-				<!-- <ul>
-					<li>Here you can add a new family member by filling this above form.</li>
-				</ul> -->
+				
 				</ol>
 			<hr>
             </section>
@@ -331,7 +323,7 @@
 					<p>Here you can edit an Accountant's information.</p>
 					<img alt="teacher" src="images/admin/accountant/edit_accountant.png"><br><br>
 					<ul>
-						<!-- <li></li> -->
+						
 					</ul>
 	
 					<h5><strong><li>View Accountant</li></strong></h5> 
@@ -340,7 +332,32 @@
 					
 					</ol>
 				<hr>
-				</section>
+			</section>
+			<section id="support_staff">
+				<h4><strong>5)Support Staff</strong></h4>	
+				<p>Here you can add new support staffs and manage all support staffs can add, edit and view a complete list of all support staffs.</p>
+			   
+				<img alt="group" src="images/admin/support_staff/support_staff_list.png"><br><br>
+				
+				<ol>
+					<h5><strong><li>Add Support Staff</li></strong></h5> 
+					<p>Here you can add a new Support Staff by filling this above form.</p>
+					<img alt="teacher" src="images/admin/support_staff/add_support_staff.png"><br><br>
+
+					<h5><strong><li>Edit Support Staff</li></strong></h5> 
+					<p>Here you can edit an Support Staff's information.</p>
+					<img alt="teacher" src="images/admin/support_staff/edit_support_staff.png"><br><br>
+					<ul>
+						
+					</ul>
+	
+					<h5><strong><li>View Support Staff</li></strong></h5> 
+					<p> </p>
+					<img alt="teacher" src="images/admin/support_staff/view_support_staff.png">
+					
+					</ol>
+				<hr>
+			</section>
 
 			<section id="ministry">
 				<h4><strong>6) Group</strong></h4>	
@@ -380,8 +397,7 @@
 				<img alt="Ministry" src="images/admin/ministry/edit_ministry.png"><br><br>
 				<ul>
 						
-						<!--<li><strong>Service Name</strong>: Enter new Service name.</li>
-						<li><strong>Service Image</strong>: Upload image for this service.</li>-->
+						
 				</ul>
 
 				<h5><strong><li>Add Member</li></strong></h5> 
@@ -389,8 +405,7 @@
 				<img alt="Ministry" src="images/admin/ministry/add_member.png"><br><br>
 				<ul>
 						
-						<!--<li><strong>Service Name</strong>: Enter new Service name.</li>
-						<li><strong>Service Image</strong>: Upload image for this service.</li>-->
+					
 				</ul>
 
 			</ol>
@@ -413,16 +428,13 @@
 					<img alt="service" src="images/admin/service/edit_services.png"><br><br>
 					<ul>
 							
-							<!--<li><strong>Service Name</strong>: Enter new Service name.</li>
-							<li><strong>Service Image</strong>: Upload image for this service.</li>-->
+					
 					</ul>
 					<h5><strong><li>View Service Detail</li></strong></h5> 
 					<p></p>
 					<img alt="service" src="images/admin/service/view_service.png"><br><br>
 					<ul>
-							
-							<!--<li><strong>Service Name</strong>: Enter new Service name.</li>
-							<li><strong>Service Image</strong>: Upload image for this service.</li>-->
+						
 					</ul>
 					</ol>
 				<hr>
@@ -444,16 +456,12 @@
 					<img alt="service" src="images/admin/pastoral/edit_pastoral.png"><br><br>
 					<ul>
 							
-							<!--<li><strong>Service Name</strong>: Enter new Service name.</li>
-							<li><strong>Service Image</strong>: Upload image for this service.</li>-->
 					</ul>
 					<h5><strong><li>View Pastoral Detail</li></strong></h5> 
 					<p></p>
 					<img alt="service" src="images/admin/pastoral/view_pastoral.png"><br><br>
 					<ul>
 							
-							<!--<li><strong>Service Name</strong>: Enter new Service name.</li>
-							<li><strong>Service Image</strong>: Upload image for this service.</li>-->
 					</ul>
 					</ol>
 				<hr>
@@ -498,16 +506,14 @@
 					<img alt="Ministry" src="images/admin/activity/edit_activity.png"><br><br>
 					<ul>
 							
-							<!--<li><strong>Service Name</strong>: Enter new Service name.</li>
-							<li><strong>Service Image</strong>: Upload image for this service.</li>-->
+
 					</ul>
 					<h5><strong><li>View Activity Detail</li></strong></h5> 
 					<p></p>
 					<img alt="Ministry" src="images/admin/activity/activity_detail.png"><br><br>
 					<ul>
 							
-							<!--<li><strong>Service Name</strong>: Enter new Service name.</li>
-							<li><strong>Service Image</strong>: Upload image for this service.</li>-->
+
 					</ul>
 				</ol>
 				<hr>
@@ -528,17 +534,13 @@
 					<img alt="Ministry" src="images/admin/venue/edit_vanue.png"><br><br>
 
 					<ul>
-							
-							<!--<li><strong>Service Name</strong>: Enter new Service name.</li>
-							<li><strong>Service Image</strong>: Upload image for this service.</li>-->
+
 					</ul>
 					<h5><strong><li>View Venue Detail</li></strong></h5> 
 					<p></p>
 					<img alt="Ministry" src="images/admin/venue/vanue_detail.png"><br><br>
 					<ul>
-							
-							<!--<li><strong>Service Name</strong>: Enter new Service name.</li>
-							<li><strong>Service Image</strong>: Upload image for this service.</li>-->
+
 					</ul>
 				</ol>
 			<hr>
@@ -559,16 +561,13 @@
 					   <img alt="Ministry" src="images/admin/reservation/edit_reservation.png"><br><br>
 					   <ul>
 							   
-							   <!--<li><strong>Service Name</strong>: Enter new Service name.</li>
-							   <li><strong>Service Image</strong>: Upload image for this service.</li>-->
+
 					   </ul>
 					   <h5><strong><li>View Reservation Detail</li></strong></h5> 
 					   <p></p>
 					   <img alt="Ministry" src="images/admin/reservation/reservation_detail.png"><br><br>
 					   <ul>
-							   
-							   <!--<li><strong>Service Name</strong>: Enter new Service name.</li>
-							   <li><strong>Service Image</strong>: Upload image for this service.</li>-->
+
 					   </ul>
 				   </ol>
 			   <hr>
@@ -1465,10 +1464,18 @@
         </section>
 		
 		</section>
-
+		<section id="support_staff_view">
+			<h3><strong>G)  Support Staff View</strong></h3>
+			<section id="Support Staff-dashboard">
+            
+            <p>Click on <strong>Dashboard</strong> to view the support staff side dashboard.</p> 
+            <img alt="" src="images/support_staff/dashboard.png"><br><br>           
+           	<p>We have already defined some menus in the member,accountant and admin view here available menu works the same as that, so here we just define the unique menu and then the member view. Support Staff can add, edit, delete and View data. </p>
+		   </section>
+		</section>
 
 		<section id="management_user">
-			<h3><strong>G)  Management:</strong></h3>
+			<h3><strong>H)  Management:</strong></h3>
 			<ol>
 			<section id="login-page-setting">
 			
@@ -1482,7 +1489,7 @@
 		
 		
 		<section id="fronted-login">
-			<h3><strong>H)  Fronted Login Page:</strong></h3>
+			<h3><strong>I)  Fronted Login Page:</strong></h3>
 			<ol>
 			<section id="login-page-setting">
 			
@@ -1501,7 +1508,7 @@
 
         
           <section id="FAQ">
-          <h3><strong>I) FAQ</strong></h3>
+            <h3><strong>J) FAQ</strong></h3>
           	<p><strong>1) Don't See the Church Management Login Page on the page listing.</strong></p>
           	<p>Don't worry, You can create a login from anywhere on your frontend page. You can add a login form in two ways. </p>
             <ol>
@@ -1512,7 +1519,7 @@
             <hr>
           </section>
 		  <section id="setting-up-Language">
-          	<h3><strong>I) Setting Up Language</strong></h3>
+          	<h3><strong>K) Setting Up Language</strong></h3>
           	
 			
 				The steps to do the translation are as follows. For eg let us consider translation to French.
